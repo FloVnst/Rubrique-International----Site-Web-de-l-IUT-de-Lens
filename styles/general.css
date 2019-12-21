@@ -26,6 +26,12 @@ nav {
     cursor: pointer;
 }
 
+#controls > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #hamburgerButton {
     height: 35px;
     margin: 10px;
