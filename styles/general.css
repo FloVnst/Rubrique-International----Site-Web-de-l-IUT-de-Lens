@@ -20,7 +20,7 @@ nav {
     flex-wrap: wrap;
 }
 
-#controls > img {
+#controls img {
     height: 25px;
     margin: 5px 10px;
 }
