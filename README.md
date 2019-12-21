@@ -2,6 +2,7 @@
 
 **Refonte de la partie internationale du site web de l'IUT de Lens**
 
+**Lien vers le site : ** https://florianvaneste.github.io/ProjetTutoreDUT-S1/international/
 <br/>
 
 ## Organisation des fichiers et des répertoires
