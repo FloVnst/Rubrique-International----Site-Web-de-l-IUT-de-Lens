@@ -21,13 +21,13 @@ nav {
 }
 
 #controls img {
-    height: 25px;
+    height: 20px;
     margin: 5px 10px;
     cursor: pointer;
 }
 
 #hamburgerButton {
-    height: 40px;
+    height: 35px;
     margin: 10px;
 }
 
