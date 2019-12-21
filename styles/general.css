@@ -23,6 +23,7 @@ nav {
 #controls img {
     height: 25px;
     margin: 5px 10px;
+    cursor: pointer;
 }
 
 #hamburgerButton {
