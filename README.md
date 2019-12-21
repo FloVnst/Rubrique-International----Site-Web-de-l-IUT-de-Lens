@@ -1,6 +1,6 @@
 # Projet tutoré - Semestre 1 de DUT informatique
 
-**Refonte de la partie internationale du site web de l'IUT de Lens**<br/>
+**Refonte de la partie internationale du site web de l'IUT de Lens**<br/><br/>
 https://florianvaneste.github.io/ProjetTutoreDUT-S1/international/
 
 <br/>
