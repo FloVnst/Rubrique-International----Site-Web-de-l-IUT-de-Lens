@@ -31,3 +31,9 @@ body {
     margin: 5px 10px;
     cursor: pointer;
 }
+
+#navMenu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}

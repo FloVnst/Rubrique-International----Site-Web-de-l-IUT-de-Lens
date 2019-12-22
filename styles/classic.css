@@ -24,7 +24,5 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    position: sticky;
-    top: 0;
     background-color: black;
 }
