@@ -1,0 +1,26 @@
+#hamburgerButton {
+    height: 35px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#topBar {
+    background-color: black;
+}
+
+#mlogoIUT > img {
+    height: 75px;
+}
+
+#logoIUT {
+    display: none;
+    height: 0;
+}
+
+#controls img {
+    height: 20px;
+}
+
+#controls {
+    flex-direction: row;
+}

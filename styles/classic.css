@@ -1,0 +1,30 @@
+/*Masquage des éléments mobile*/
+#hamburgerButton {
+    display: none;
+}
+
+#topBar {
+    background-color: black;
+}
+
+#logoIUT > img {
+    height: 60px;
+}
+
+#controls img {
+    height: 16px;
+}
+
+#controls {
+    flex-direction: row-reverse;
+}
+
+#navMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
