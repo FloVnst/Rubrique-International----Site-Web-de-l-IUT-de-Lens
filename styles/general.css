@@ -39,6 +39,7 @@ body {
 
 .controlIcon {
     height: 20px;
+    margin: 5px;
 }
 
 #controls > button, #displayMobileMenu {
@@ -59,7 +60,7 @@ body {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    margin-right: 1vw;
+    margin: 0 auto;
 }
 
 #studentsLinks > ul {
