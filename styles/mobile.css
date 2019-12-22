@@ -6,6 +6,9 @@
 
 #topBar {
     background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
 }
 
 #mlogoIUT > img {
