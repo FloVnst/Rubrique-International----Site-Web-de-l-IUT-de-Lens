@@ -8,6 +8,7 @@ function displayNavMenu() {
         navMenu.style.display = "flex";
         navMenu.style.height = "150px";
         navMenu.style.width = "100%";
+        topBar.style.position = "fixed";
     }
     else {
         navMenu.style.display = "none";

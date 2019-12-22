@@ -8,7 +8,7 @@
 }
 
 #logoIUT > img {
-    height: 60px;
+    height: 65px;
 }
 
 #controls img {
@@ -29,4 +29,12 @@
     height: auto !important;
 }
 
+
+
 /*TODO: Gérer position sticky -> flex quand on affiche le menu de navigation mobile*/
+
+
+
+/*THOMAS*/
+
+
