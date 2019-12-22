@@ -1,43 +1,137 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
-    width: 100%;
+    width: 98vw;
     height: 100vh;
     scroll-behavior: smooth;
     font-family: Helvetica, sans-serif;
 }
 
-#topBar {
+#pageHeader {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: black;
+}
+
+#logoIUT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoIUT > img {
+    width: 65px;
+}
+
+#rightSideHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
     width: 100%;
+}
+
+.controlIcon {
+    height: 20px;
+}
+
+#controls > button, #displayMobileMenu {
+    border: none;
+    background: none;
+    padding: none;
+    cursor: pointer;
 }
 
 #controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
-#controls > a {
+#studentsLinks {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-self: flex-start;
+    margin-right: 1vw;
 }
 
-#controls img {
-    height: 20px;
-    margin: 5px 10px;
+#studentsLinks > ul {
+    position: fixed;
+    display: none;
+    padding: 0;
+    margin: 0;
+    top: 28.4px;
+}
+
+#studentsLinks > ul > li {
+    background-color: #333333;
+}
+
+#studentsLinks > ul > li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 4px 7px;
+}
+
+#studentsLinks:hover ul {
+    display: block;
+}
+
+#studentsLinks > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15.625px;
+    margin: 0;
+    background-color: #4D4D4D;
+    color: white;
     cursor: pointer;
 }
 
-#navMenu {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+#studentsLinks a {
+    color: white;
+    font-size: 14px;
 }
 
-/*THOMAS*/
+#commonMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+    width: 100%
+}
 
+#displayMobileMenu {
+    width: 48px;
+}
+
+#displayMobileMenu > div, #displayMobileMenu:before, #displayMobileMenu:after {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+#displayMobileMenu:hover:before {
+    transform: translateY(10px) rotate(135deg);
+}
+
+#displayMobileMenu:hover:after {
+    transform: translateY(-10px) rotate(-135deg);
+}
+
+#displayMobileMenu:hover div {
+    transform: scale(0);
+}
