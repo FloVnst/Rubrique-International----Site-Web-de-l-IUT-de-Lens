@@ -27,3 +27,19 @@
 #controls {
     flex-direction: row;
 }
+
+#navMenu {
+    display: none;
+    position: fixed;
+    width: 0;
+    background-color: black;
+}
+
+/*
+#closeNavMenu, #closeNavMenu:before, #closeNavMenu:after {
+    background-color: white;
+    width: 25px;
+    height: 7px;
+    margin: 7px 0;
+}
+*/

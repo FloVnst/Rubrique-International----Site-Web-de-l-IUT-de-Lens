@@ -16,17 +16,18 @@
         
         <nav id="topBar">
 
+            <!-- Logo de l'IUT (affiché seulement en version mobile -->
             <a id="mlogoIUT" href="http://www.iut-lens.univ-artois.fr">
                 <img alt="Page d'accueil" src="../images/icons/logo-iut.svg">
             </a>
 
 
             <div id="controls">
-                <!--Bouton site en anglais-->
+                <!-- Bouton site en anglais -->
                 <a href="../en/index.html">
                     <img id="translateButton" alt="Traduire le site en anglais" src="../images/icons/uk-flag.svg">
                 </a>
-                <!--Bouton mode clair/sombre-->
+                <!-- Bouton mode clair/sombre -->
                 <img id="darkmodeButton" alt="Mode sombre" src="../images/icons/dark-mode.svg">
             </div>
 
@@ -36,13 +37,19 @@
         </nav>
 
 
+        <!-- Menu de navigation (s'adaptant en version mobile et version classique) -->
         <nav id="navMenu">
+
+            <!-- Logo de l'IUT (affiché seulement en version classique -->
             <a id="logoIUT" href="http://www.iut-lens.univ-artois.fr">
                 <img alt="Page d'accueil" src="../images/icons/logo-iut.svg">
             </a>
+            
+            <div id="closeNavMenu"></div>
 
         </nav>
 
+        <!-- Contenu de la page -->
         <div id="pageContent">
 
             <p>
@@ -68,6 +75,8 @@
             </p>
 
         </div>
+
+        <script src="../scripts/navMenu.js"></script>
 
     </body>
     

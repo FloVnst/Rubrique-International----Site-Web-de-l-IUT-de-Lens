@@ -20,9 +20,13 @@
 }
 
 #navMenu {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 100% !important;
     background-color: black;
+    top: 0 !important;
+    height: auto !important;
 }
+
+/*TODO: Gérer position sticky -> flex quand on affiche le menu de navigation mobile*/
