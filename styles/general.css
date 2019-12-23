@@ -11,6 +11,9 @@ body {
     overflow-y: visible !important;
 }
 
+
+/* En-tête */
+
 #pageHeader {
     display: flex;
     flex-direction: row;
@@ -38,8 +41,12 @@ body {
     width: 100%;
 }
 
-.controlIcon {
-    margin: 5px;
+#commonMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%
 }
 
 #controls > button, #hamburgerButton {
@@ -54,6 +61,10 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.controlIcon {
+    margin: 5px;
 }
 
 #studentsLinks {
@@ -72,17 +83,10 @@ body {
 
 #studentsLinks > ul > li {
     background-color: #333333;
-}
-
-#studentsLinks > ul > li {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 4px 7px;
-}
-
-#studentsLinks:hover ul {
-    display: block;
 }
 
 #studentsLinks > p {
@@ -101,15 +105,17 @@ body {
     font-size: 14px;
 }
 
-#commonMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%
+#studentsLinks:hover ul {
+    display: block;
 }
 
-#navMenu > li > a {
+.navTitle {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    background-color: #4D4D4D;
+    cursor: pointer;
+}
+
+.submenusNav {
+    padding: 0;
 }

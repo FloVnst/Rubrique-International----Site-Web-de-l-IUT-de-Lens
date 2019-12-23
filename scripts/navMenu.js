@@ -1,31 +1,75 @@
 var hamburgerButton = document.getElementById("hamburgerButton"),
-    navMenuContainer = document.getElementById("navMenuContainer"),
+    navMenusContainer = document.getElementById("navMenusContainer"),
     pageHeader = document.getElementById('pageHeader');
 mobileNavMenuDisplayed = false;
+mobileVersion = window.innerWidth <= 975;
+submenusDisplaying = [];
 
 function displayNavMenu () {
+    // Gestion de l"affichage du menu de navigation mobile et du bouton hamburger
     if (mobileNavMenuDisplayed) {
         // Si le menu de navigation mobile est déjà affiché on le cache
-        navMenuContainer.style.removeProperty("display");
+        navMenusContainer.style.removeProperty("display");
         document.body.style.removeProperty("overflow-y");
         hamburgerButton.classList.remove("hamburgerMenuDisplayed");
-        navMenuContainer.classList.remove("navMenuContainerDisplayed");
-        pageHeader.classList.remove("pageHeaderIfNavMenuContainerDisplayed");
-        document.body.classList.remove("bodyIfNavMenuContainerDisplayed");
+        navMenusContainer.classList.remove("navMenusContainerDisplayed");
+        pageHeader.classList.remove("pageHeaderIfNavMenusContainerDisplayed");
+        document.body.classList.remove("bodyIfNavMenusContainerDisplayed");
         mobileNavMenuDisplayed = false;
     }
     else {
         // Si le menu de navigation mobile est masqué on l'affiche
         var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height");
         headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
-        navMenuContainer.style.height = window.innerHeight - headerHeight + "px";
-        navMenuContainer.style.top = headerHeight + "px";
-        navMenuContainer.classList.add("navMenuContainerDisplayed");
-        pageHeader.classList.add("pageHeaderIfNavMenuContainerDisplayed");
-        document.body.classList.add("bodyIfNavMenuContainerDisplayed");
+        navMenusContainer.style.height = window.innerHeight - headerHeight + "px";
+        navMenusContainer.style.top = headerHeight + "px";
+        navMenusContainer.classList.add("navMenusContainerDisplayed");
+        pageHeader.classList.add("pageHeaderIfNavMenusContainerDisplayed");
+        document.body.classList.add("bodyIfNavMenusContainerDisplayed");
         hamburgerButton.classList.add("hamburgerMenuDisplayed");
         mobileNavMenuDisplayed = true;
     }
 }
 
+
+function displaySubmenu(menu) {
+    var selectedMenu = document.querySelector("#" + menu + " > .submenusNav"),
+        selectedMenuDisplay = window.getComputedStyle(selectedMenu).getPropertyValue("display");
+    if (mobileVersion) {
+        if (selectedMenuDisplay === "none") {
+            selectedMenu.style.display = "block";
+        }
+        else {
+            selectedMenu.style.display = "none";
+        }
+    }
+    else {
+        selectedMenu.style.display = "none";
+    }
+}
+
+
+
+for (i=0; i<5; i++) {
+    document.getElementById("navMenu" + i).addEventListener("click", function () {
+        if (mobileVersion) {
+            displaySubmenu(this.id);
+        }
+    });
+}
+
+
+function windowResized() {
+    // On vérifie si la version du site a changé (mobile ou classique), et on met a jour la variable mobileVersion si c'est le cas
+    if ((window.innerWidth <= 975 && mobileVersion === false) || (window.innerWidth > 975 && mobileVersion === true)) {
+        mobileVersion = !mobileVersion;
+        if (!mobileVersion) {
+            for (i=0; i<5; i++) {
+                displaySubmenu("navMenu" + i);
+            }
+        }
+    }
+}
+
 hamburgerButton.addEventListener("click", displayNavMenu);
+window.addEventListener("resize", windowResized);

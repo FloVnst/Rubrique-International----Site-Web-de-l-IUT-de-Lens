@@ -1,13 +1,5 @@
-#hamburgerButton {
-    display: none;
-}
-
 #logoIUT > img {
     width: 90px;
-}
-
-.controlIcon {
-    height: 18px;
 }
 
 #rightSideHeader {
@@ -16,60 +8,74 @@
     height: 90px;
 }
 
+.controlIcon {
+    height: 18px;
+}
+
 #studentsLinks {
     margin: 0;
 }
 
-#rightSideHeader > nav {
-    margin: 0 auto;
+#hamburgerButton {
+    display: none;
 }
 
-#navMenu {
+#navMenusContainer {
+    margin: 0 auto;
+    top: unset !important;
+    height: unset !important;
+}
+
+#navMenus {
     display: flex;
     width: 875px;
     margin: 0;
     padding: 0;
 }
 
-#navMenuContainer {
-    top: unset !important;
-    height: unset !important;
-}
-
-#navMenu >  li > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 8px 10px 5px 10px;
-    background-color: #4D4D4D;
-    color: white;
-    border-top: none;
-    border-bottom: 3px solid transparent;
-    white-space: nowrap;
-    text-decoration: none;
-}
-
-#navMenu >  li {
+#navMenus >  li {
     width: 175px;
     list-style: none;
 }
 
-#navMenu > li:hover .submenusNav {
-    display: block;
+#navMenus > li:hover .submenusNav {
+    display: block !important;
+}
+
+#navMenus > li:nth-child(5) > .submenusNav {
+    max-width: 175px;
+}
+
+.navTitle {
+    justify-content: center;
+    padding: 8px 2px 5px 2px;
+    border-top: none;
+    border-bottom: 3px solid transparent;
+}
+
+.navTitle > a {
+    margin: 0;
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.navTitle > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-left: 7px;
 }
 
 .submenusNav {
     display: none;
     position: fixed;
     list-style: none;
-    padding: 0;
     min-width: 175px;
     top: 90px;
-}
-
-#navMenu > li:nth-child(5) > .submenusNav {
-    max-width: 175px;
 }
 
 .submenusNav > li {
@@ -78,8 +84,3 @@
      padding: 5px 7px;
      background-color: cornflowerblue;
  }
-
-.submenusNav > li > a {
-    text-decoration: none;
-    color: white;
-}

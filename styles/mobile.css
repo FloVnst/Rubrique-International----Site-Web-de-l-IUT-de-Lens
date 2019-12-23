@@ -2,8 +2,17 @@
     width: 65px;
 }
 
+#commonMenu {
+    height: 65px;
+}
+
 .controlIcon {
     height: 20px;
+}
+
+#studentsLinks {
+    margin: 0 auto;
+    z-index: 1000;
 }
 
 #hamburgerButton {
@@ -32,7 +41,7 @@
     transform: scale(0);
 }
 
-#navMenuContainer {
+#navMenusContainer {
     display: none;
     position: fixed;
     flex-direction: column;
@@ -44,19 +53,20 @@
     color: white;
 }
 
-.navMenuContainerDisplayed {
+.navMenusContainerDisplayed {
     display: flex !important;
 }
 
-.pageHeaderIfNavMenuContainerDisplayed {
+.pageHeaderIfNavMenusContainerDisplayed {
     position: fixed !important;
 }
 
-.bodyIfNavMenuContainerDisplayed {
+.bodyIfNavMenusContainerDisplayed {
     overflow-y: hidden !important;
 }
 
-#navMenu {
+#navMenus {
+    padding: 0;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -69,32 +79,54 @@
     padding: 10px 0;
 }
 
-#navMenu > li {
+#navMenus > li {
     width: 80vw;
+    margin: 10px;
 }
 
-#navMenu ul {
-    list-style: none;
-    padding: 0;
-}
-
-#navMenu > li > a {
+#navMenus > li > a {
     font-size: 18px;
     text-decoration: underline;
 }
 
+#navMenus ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navTitle {
+    justify-content: center;
+    padding: 8px 2px 5px 2px;
+}
+
+.navTitle > a {
+    color: white;
+}
+
+.navTitle > div {
+    position: absolute;
+    right: 11.5vw;
+}
+
+.submenusNav {
+    background-color: #222222;
+}
+
+.submenusNav > li {
+    display: flex;
+    justify-content: center;
+    padding: 5px 7px;
+    border-bottom: 1px solid #333333;
+}
+
 .submenusNav > li > a {
     font-size: 16px;
+    text-decoration: none;
+    color: white;
 }
 
-#commonMenu {
-    height: 65px;
-}
 
-#studentsLinks {
-    margin: 0 auto;
-    z-index: 1000;
-}
+/* Suppression d'éléments si la largeur d'écran est trop petite */
 
 @media screen and (max-width: 340px) {
     #studentsLinks {
@@ -113,26 +145,3 @@
         display: none;
     }
 }
-
-#navMenu > li > a {
-    justify-content: space-around;
-    margin: 0 auto;
-    background-color: #333333;
-    padding: 7px 0;
-    color: white;
-}
-
-#navMenu > li {
-    margin: 7px 0;
-    background-color: #222222;
-}
-
-.submenusNav > li {
-    margin: 10px;
-}
-
-.submenusNav > li > a {
-    color: white;
-}
-
-/*TODO : Ne plus utiliser le after pour les fleches de menu mais un backgroud*/
