@@ -109,6 +109,7 @@
 }
 
 .submenusNav {
+    display: none;
     background-color: #222222;
 }
 
@@ -122,6 +123,7 @@
 .submenusNav > li > a {
     font-size: 16px;
     text-decoration: none;
+    text-align: center;
     color: white;
 }
 
