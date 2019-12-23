@@ -16,7 +16,8 @@
 }
 
 #hamburgerButton {
-    width: 48px;
+    width: 32px;
+    margin-right: 10px;
 }
 
 #hamburgerButton > div, #hamburgerButton:before, #hamburgerButton:after {
