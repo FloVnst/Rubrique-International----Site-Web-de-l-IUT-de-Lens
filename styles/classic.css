@@ -1,0 +1,68 @@
+#hamburgerButton {
+    display: none;
+}
+
+#logoIUT > img {
+    width: 90px;
+}
+
+.controlIcon {
+    height: 18px;
+}
+
+#rightSideHeader {
+    align-self: flex-start;
+    justify-content: space-between;
+    height: 90px;
+}
+
+#studentsLinks {
+    margin: 0;
+}
+
+#rightSideHeader > nav {
+    margin: 0 auto;
+}
+
+#navMenu {
+    display: flex;
+    width: 875px;
+    margin: 0;
+    padding: 0;
+}
+
+#navMenu >  li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 8px 10px 5px 10px;
+    background-color: #4D4D4D;
+    color: white;
+    border-top: none;
+    border-bottom: 3px solid transparent;
+}
+
+#navMenu >  li {
+    width: 175px;
+    list-style: none;
+}
+
+#navMenu > li:hover .submenusNav {
+    display: block;
+}
+
+.submenusNav {
+    display: none;
+    position: fixed;
+    list-style: none;
+    padding: 0;
+    min-width: 175px;
+}
+
+.submenusNav > li {
+    display: flex;
+    align-items: center;
+    padding: 5px 7px;
+    background-color: cornflowerblue;
+}

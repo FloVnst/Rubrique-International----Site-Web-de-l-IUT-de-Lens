@@ -1,0 +1,63 @@
+#logoIUT > img {
+    width: 65px;
+}
+
+.controlIcon {
+    height: 20px;
+}
+
+#hamburgerButton {
+    width: 48px;
+}
+
+#hamburgerButton > div, #hamburgerButton:before, #hamburgerButton:after {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+#hamburgerButton:hover:before {
+    transform: translateY(10px) rotate(135deg);
+}
+
+#hamburgerButton:hover:after {
+    transform: translateY(-10px) rotate(-135deg);
+}
+
+#hamburgerButton:hover div {
+    transform: scale(0);
+}
+
+#navMenu {
+    display: none;
+}
+
+#commonMenu {
+    height: 65px;
+}
+
+#studentsLinks {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 340px) {
+    #studentsLinks {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    #luminosityButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 190px) {
+    #controls {
+        display: none;
+    }
+}
