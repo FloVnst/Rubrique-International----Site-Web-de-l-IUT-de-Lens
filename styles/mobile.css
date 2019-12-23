@@ -106,6 +106,7 @@
 .navTitle > div {
     position: absolute;
     right: 11.5vw;
+    transition: transform 0.35s;
 }
 
 .submenusNav {

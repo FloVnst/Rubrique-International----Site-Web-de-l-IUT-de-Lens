@@ -82,5 +82,9 @@
      display: flex;
      align-items: center;
      padding: 5px 7px;
-     background-color: cornflowerblue;
+     background-color: #333333;
  }
+
+.submenusNav > li > a {
+    color: white;
+}

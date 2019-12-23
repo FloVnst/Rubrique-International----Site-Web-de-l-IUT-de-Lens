@@ -34,17 +34,21 @@ function displayNavMenu () {
 
 function displaySubmenu(menu) {
     var selectedMenu = document.querySelector("#" + menu + " > .submenusNav"),
-        selectedMenuDisplay = window.getComputedStyle(selectedMenu).getPropertyValue("display");
+        selectedMenuDisplay = window.getComputedStyle(selectedMenu).getPropertyValue("display"),
+        menuArrow = document.querySelector("#" + menu + " > .navTitle > div");
     if (mobileVersion) {
         if (selectedMenuDisplay === "none") {
             selectedMenu.style.display = "block";
+            menuArrow.style.transform = "rotate(180deg)";
         }
         else {
             selectedMenu.style.display = "none";
+            menuArrow.style.transform = "";
         }
     }
     else {
         selectedMenu.style.display = "none";
+        menuArrow.style.transform = "";
     }
 }
 
