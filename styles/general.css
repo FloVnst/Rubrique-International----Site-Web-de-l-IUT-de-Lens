@@ -20,6 +20,7 @@ body {
     background-color: black;
     position: sticky;
     top: 0;
+    box-shadow: 0px 0px 5px #333333;
 }
 
 #logoIUT {
@@ -106,4 +107,9 @@ body {
     justify-content: flex-end;
     align-items: center;
     width: 100%
+}
+
+#navMenu > li > a {
+    display: flex;
+    justify-content: space-between;
 }

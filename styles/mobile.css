@@ -35,10 +35,13 @@
 #navMenuContainer {
     display: none;
     position: fixed;
-    background-color: #333333;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
     width: 100%;
     overflow-y: scroll;
     right: 0;
+    color: white;
 }
 
 .navMenuContainerDisplayed {
@@ -66,9 +69,22 @@
     padding: 10px 0;
 }
 
+#navMenu > li {
+    width: 80vw;
+}
+
 #navMenu ul {
     list-style: none;
     padding: 0;
+}
+
+#navMenu > li > a {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.submenusNav > li > a {
+    font-size: 16px;
 }
 
 #commonMenu {
@@ -97,3 +113,26 @@
         display: none;
     }
 }
+
+#navMenu > li > a {
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: #333333;
+    padding: 7px 0;
+    color: white;
+}
+
+#navMenu > li {
+    margin: 7px 0;
+    background-color: #222222;
+}
+
+.submenusNav > li {
+    margin: 10px;
+}
+
+.submenusNav > li > a {
+    color: white;
+}
+
+/*TODO : Ne plus utiliser le after pour les fleches de menu mais un backgroud*/
