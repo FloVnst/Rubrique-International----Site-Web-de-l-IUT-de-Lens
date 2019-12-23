@@ -73,6 +73,12 @@ function windowResized() {
             }
         }
     }
+    if (mobileVersion) {
+        // Adaptation de la hauteur du menu de navigation mobile à la nouvelle hauteur de la fenêtre
+        var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height");
+        headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
+        navMenusContainer.style.height = window.innerHeight - headerHeight + "px";
+    }
 }
 
 hamburgerButton.addEventListener("click", displayNavMenu);
