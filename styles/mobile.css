@@ -154,10 +154,6 @@
 
 /* Pied de page */
 
-#logoUniv > img {
-    width: 90px;
-}
-
 #footerLinksContainer {
     flex-direction: column-reverse;
 }
@@ -172,4 +168,8 @@
 
 #copyrightBanner > p {
     text-align: center;
+}
+
+#logoUniv > img {
+    width: 90px;
 }

@@ -73,12 +73,19 @@ function windowResized() {
         }
     }
 
+    // Stockage de la hauteur du header et du footer
+    var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height"),
+        footerHeight = window.getComputedStyle(pageFooter).getPropertyValue("height");
+    headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
+    footerHeight = footerHeight.slice(0, footerHeight.lastIndexOf("px"));
+
     // Changement de la hauteur du menu de navigation mobile (pour couvrir tout l'écran en hauteur, la largeur étant toujours 100%)
     if (mobileVersion && mobileNavMenuDisplayed) {
-        var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height");
-        headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
         navMenusContainer.style.height = window.innerHeight - headerHeight + "px";
     }
+
+    // Mise à jour de la hauteur minimale du contenu de la page
+    pageContent.style.minHeight = window.innerHeight - headerHeight - footerHeight + "px";
 }
 
 
