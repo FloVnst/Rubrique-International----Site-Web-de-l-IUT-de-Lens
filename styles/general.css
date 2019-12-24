@@ -121,12 +121,43 @@ body {
     padding: 0;
 }
 
+
+/* Pied de page */
+
 footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
     background-color: black;
-    align-items: center;
+}
+
+footer > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#footerLinksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#copyrightBanner {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+#copyrightBanner > p {
+    color: white;
+    font-size: 11px;
+    margin: 0 0 5px 10px;
+    width: 100%;
 }
 
 #socialNetworks {
@@ -134,7 +165,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5px;
+    margin: 5px auto;
 }
 
 #socialNetworks > a {
@@ -151,7 +182,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 7px 0 7px 5px;
+    margin: 7px 0 0 5px;
 }
 
 #footerLinks > a {
@@ -161,7 +192,13 @@ footer {
     font-size: 14px;
 }
 
-#logoUniv {
+#logoUniv > img {
     width: 90px;
+}
+
+#logoUniv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin : 7px 25px 7px 5px;
 }
