@@ -123,48 +123,45 @@ body {
 
 footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     width: 100vw;
     background-color: black;
     align-items: center;
 }
 
 #socialNetworks {
-    max-width: 96vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
 }
 
 #socialNetworks > a {
     color: white;
 }
 
+#socialNetworks > a > img {
+    margin: 0 3px;
+    width: 32px;
+}
+
 #footerLinks {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    flex-wrap: wrap;
+    margin: 7px 0 7px 5px;
 }
 
-#footerLinks > div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#footerLinks > div, #footerLinks > a {
-    margin: 4px 15px;
-}
-
-#footerLinks > a, #footerLinks > div > a {
+#footerLinks > a {
+    display: block;
+    margin: 5px;
     color: white;
     font-size: 14px;
 }
 
-#footerLinks > div > a {
-    display: block;
-    text-align: center;
-    margin: 5px;
-}
-
 #logoUniv {
     width: 90px;
+    margin : 7px 25px 7px 5px;
 }
