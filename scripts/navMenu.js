@@ -58,7 +58,7 @@ function displaySubmenu(menu) {
         selectedMenu.style.display = "none";
         menuArrow.style.transform = "";
     }
-
+}
 
 // Fonction executée lorsque la fenêtre change de dimensions
 function windowResized() {
@@ -75,7 +75,6 @@ function windowResized() {
 
     // Changement de la hauteur du menu de navigation mobile (pour couvrir tout l'écran en hauteur, la largeur étant toujours 100%)
     if (mobileVersion && mobileNavMenuDisplayed) {
-        console.log("hohoho");
         var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height");
         headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
         navMenusContainer.style.height = window.innerHeight - headerHeight + "px";
