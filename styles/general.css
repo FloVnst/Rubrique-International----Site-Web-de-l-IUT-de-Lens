@@ -147,6 +147,7 @@ footer {
 #footerLinks > div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #footerLinks > div, #footerLinks > a {
