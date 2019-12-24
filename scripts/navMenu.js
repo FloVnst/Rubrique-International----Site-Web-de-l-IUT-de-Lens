@@ -1,14 +1,17 @@
+// Variables contenant les éléments html de la page
 var hamburgerButton = document.getElementById("hamburgerButton"),
     navMenusContainer = document.getElementById("navMenusContainer"),
     pageHeader = document.getElementById('pageHeader');
-mobileNavMenuDisplayed = false;
-mobileVersion = window.innerWidth <= 975;
-submenusDisplaying = [];
 
+// Variables de test
+var mobileNavMenuDisplayed = false,             // Vaut true si le menu de navigation mobile est affiché
+    mobileVersion = window.innerWidth <= 975;   // Vaut true si le site est en version mobile
+
+
+// Gestion de l"affichage du menu de navigation mobile et du bouton hamburger
 function displayNavMenu () {
-    // Gestion de l"affichage du menu de navigation mobile et du bouton hamburger
+    // Si le menu de navigation mobile est déjà affiché on le cache
     if (mobileNavMenuDisplayed) {
-        // Si le menu de navigation mobile est déjà affiché on le cache
         navMenusContainer.style.removeProperty("display");
         document.body.style.removeProperty("overflow-y");
         hamburgerButton.classList.remove("hamburgerMenuDisplayed");
@@ -17,8 +20,8 @@ function displayNavMenu () {
         document.body.classList.remove("bodyIfNavMenusContainerDisplayed");
         mobileNavMenuDisplayed = false;
     }
+    // Sinon on l'affiche
     else {
-        // Si le menu de navigation mobile est masqué on l'affiche
         var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height");
         headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
         navMenusContainer.style.height = window.innerHeight - headerHeight + "px";
@@ -31,29 +34,62 @@ function displayNavMenu () {
     }
 }
 
-
+// Gestion de l'affichage des sous-menus du menu de navigation
 function displaySubmenu(menu) {
     var selectedMenu = document.querySelector("#" + menu + " > .submenusNav"),
         selectedMenuDisplay = window.getComputedStyle(selectedMenu).getPropertyValue("display"),
         menuArrow = document.querySelector("#" + menu + " > .navTitle > div");
+
+    // Si le site est en version mobile
     if (mobileVersion) {
+        // Si le menu sélectionné est caché, on l'affiche
         if (selectedMenuDisplay === "none") {
             selectedMenu.style.display = "block";
-            menuArrow.style.transform = "rotate(180deg)";
+            menuArrow.style.transform = "rotate(180deg)"; // Animation du bouton d'affichage de menu
         }
+        // Sinon on le cache
         else {
             selectedMenu.style.display = "none";
             menuArrow.style.transform = "";
         }
     }
+    // Si le site est en version classique, on annule les propriétés ajoutées au sous-menu pour la version mobile
     else {
         selectedMenu.style.display = "none";
         menuArrow.style.transform = "";
     }
+
+
+// Fonction executée lorsque la fenêtre change de dimensions
+function windowResized() {
+    // On vérifie si la version du site a changé (mobile ou classique), et on met a jour la variable mobileVersion si c'est le cas
+    if ((window.innerWidth <= 975 && mobileVersion === false) || (window.innerWidth > 975 && mobileVersion === true)) {
+        mobileVersion = !mobileVersion;
+        // Si le site est en version classique, on affiche tous les sous-menus de la page
+        if (!mobileVersion) {
+            for (i=0; i<5; i++) {
+                displaySubmenu("navMenu" + i);
+            }
+        }
+    }
+
+    // Changement de la hauteur du menu de navigation mobile (pour couvrir tout l'écran en hauteur, la largeur étant toujours 100%)
+    if (mobileVersion && mobileNavMenuDisplayed) {
+        console.log("hohoho");
+        var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height");
+        headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
+        navMenusContainer.style.height = window.innerHeight - headerHeight + "px";
+    }
 }
 
 
+// Gestion des clics sur le bouton hamburger, déclanchant l'affichage du menu de navigation mobile
+hamburgerButton.addEventListener("click", displayNavMenu);
 
+// Gestion de redimensionnement de la fenêtre
+window.addEventListener("resize", windowResized);
+
+// Gestion des clics sur les titres de menus dans le menu de navigation mobile
 for (i=0; i<5; i++) {
     document.getElementById("navMenu" + i).addEventListener("click", function () {
         if (mobileVersion) {
@@ -61,25 +97,3 @@ for (i=0; i<5; i++) {
         }
     });
 }
-
-
-function windowResized() {
-    // On vérifie si la version du site a changé (mobile ou classique), et on met a jour la variable mobileVersion si c'est le cas
-    if ((window.innerWidth <= 975 && mobileVersion === false) || (window.innerWidth > 975 && mobileVersion === true)) {
-        mobileVersion = !mobileVersion;
-        if (!mobileVersion) {
-            for (i=0; i<5; i++) {
-                displaySubmenu("navMenu" + i);
-            }
-        }
-    }
-    if (mobileVersion) {
-        // Adaptation de la hauteur du menu de navigation mobile à la nouvelle hauteur de la fenêtre
-        var headerHeight = window.getComputedStyle(pageHeader).getPropertyValue("height");
-        headerHeight = headerHeight.slice(0, headerHeight.lastIndexOf("px"));
-        navMenusContainer.style.height = window.innerHeight - headerHeight + "px";
-    }
-}
-
-hamburgerButton.addEventListener("click", displayNavMenu);
-window.addEventListener("resize", windowResized);
