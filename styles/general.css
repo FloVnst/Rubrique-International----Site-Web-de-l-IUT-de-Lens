@@ -142,7 +142,6 @@ footer > nav {
 
 #footerLinksContainer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
@@ -151,13 +150,13 @@ footer > nav {
     display: flex;
     justify-content: flex-start;
     background-color: black;
+    width: 100%;
 }
 
 #copyrightBanner > p {
     color: white;
     font-size: 11px;
-    margin: 0 0 5px 10px;
-    width: 100%;
+    margin: 0 20px 0 0;
 }
 
 #socialNetworks {
@@ -179,21 +178,16 @@ footer > nav {
 
 #footerLinks {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 7px 0 0 5px;
 }
 
 #footerLinks > a {
     display: block;
-    margin: 5px;
+    margin: 2px 5px;
     color: white;
     font-size: 14px;
-}
-
-#logoUniv > img {
-    width: 90px;
+    text-align: center;
 }
 
 #logoUniv {

@@ -88,3 +88,22 @@
 .submenusNav > li > a {
     color: white;
 }
+
+
+/* Pied de page */
+
+#logoUniv > img {
+    width: 90px;
+}
+
+#footerLinksContainer {
+    flex-direction: row;
+}
+
+#footerLinks {
+    margin: 7px 0 0 5px;
+}
+
+#copyrightBanner {
+    margin: 0 0 5px 10px;
+}

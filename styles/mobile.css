@@ -149,3 +149,27 @@
         display: none;
     }
 }
+
+
+
+/* Pied de page */
+
+#logoUniv > img {
+    width: 90px;
+}
+
+#footerLinksContainer {
+    flex-direction: column-reverse;
+}
+
+#footerLinks {
+    margin: 7px 0;
+}
+
+#copyrightBanner {
+    margin: 5px 0 5px 10px;
+}
+
+#copyrightBanner > p {
+    text-align: center;
+}
