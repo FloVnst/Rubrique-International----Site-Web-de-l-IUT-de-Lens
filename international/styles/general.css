@@ -7,7 +7,9 @@
 #pageContent > .pictureBanner {
     width: 100vw;
     height: 80px;
-    background-color: cornflowerblue;
+    background-image: url("../images/illustrations/louvre-paris.jpg");
+    background-position: 50% 67%;
+    background-size: 100vw auto;
 }
 
 #contentHeader {
@@ -129,3 +131,14 @@
     max-width: 80vw;
 }
 
+#tileEtudierALIUT > .tileImage {
+    background-image: url("../images/illustrations/vue-globale-iut.jpg");
+    background-size: 100% auto;
+    background-position: center 50%;
+}
+
+#tilePartirALEtranger > .tileImage {
+    background-image: url("../images/illustrations/ireland.jpg");
+    background-size: 100% auto;
+    background-position: center 50%;
+}
