@@ -85,14 +85,38 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 #assetsIUT > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: black;
     margin: 10px;
+    max-width: 220px;
+    max-height: 220px;
+    width: 70vw;
+    height: 70vw;
+}
+
+#assetsIUT > div > p {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin: 7px 5px 15px 5px;
+}
+
+#assetsIUT > div > img {
+    margin: 15px 5px 7px 5px;
+    height: 50px;
+}
+
+#assetsIUT > div > p > span {
+    text-align: center;
+    font-size: 14px;
+    color: #aaaaaa;
 }
 
 #pageContent > section > h2 {
@@ -102,4 +126,6 @@
     background-color: black;
     text-align: center;
     font-size: 20px;
+    max-width: 80vw;
 }
+

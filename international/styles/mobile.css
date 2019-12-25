@@ -2,10 +2,3 @@
     width: 100vw;
     margin: 0;
 }
-
-#assetsIUT > div {
-    width: 150px;
-    height: 150px;
-    min-width: 25vw;
-    min-height: 25vw;
-}
