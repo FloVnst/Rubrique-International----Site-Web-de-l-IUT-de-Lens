@@ -32,7 +32,7 @@
 #contentHeader > .tilesBord {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     width: 100%;
     margin: 25px 0;
 }
