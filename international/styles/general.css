@@ -334,9 +334,14 @@ a.pinkButton {
     color: white;
 }
 
-#addressContainer > address p {
+#addressContainer > address .addressContent {
     color: grey;
     margin: 2px 7px 15px 7px;
+}
+
+#addressContainer > address .addressTitle {
+    font-size: 18px;
+    margin: 0 7px;
 }
 
 #sectionEuropeContent {
