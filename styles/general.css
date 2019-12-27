@@ -214,6 +214,17 @@ a[target="_blank"]:after {
     margin : 7px 25px 7px 5px;
 }
 
+
+/* Classes générales, utiles sur tout le site */
+
 .hidden {
     display: none;
+}
+
+.button {
+    transition: transform 0.15s;
+}
+
+.button:hover {
+    transform: scale(1.025, 1.025);
 }
