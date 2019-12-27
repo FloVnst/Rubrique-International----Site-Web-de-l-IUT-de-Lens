@@ -70,11 +70,11 @@
     padding: 5px;
 }
 
-#pageContent>section:nth-of-type(2n+1) {
+#pageContent>section.coloredBlock:nth-of-type(2n+1) {
      background-color: #2c2c2c;
  }
 
-#pageContent>section:nth-of-type(2n+2) {
+#pageContent>section.coloredBlock:nth-of-type(2n+2) {
     background-color: #333333;
 }
 
@@ -387,21 +387,29 @@ a.pinkButton {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #222222;
+    background-color: rgba(34, 34, 34, 0.9);
     align-items: center;
-    margin: 7px;
+    margin: 7px 10px;
     width: 10vw;
     min-width: 120px;
     min-height: 120px;
     height: 10vw;
     text-align: center;
     color: white;
+    padding: 2px;
 }
 
 .chiffreCle {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .chiffreTitle {
     color: #eeeeee;
+}
+
+#sectionChiffres {
+    background-image: url("../images/illustrations/background-section-chiffres.jpg");
+    background-size: 130vw auto;
+    background-position: center 25%;
 }
