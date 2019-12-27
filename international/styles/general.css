@@ -188,7 +188,7 @@
     padding: 5px 0;
     cursor: pointer;
     background-color: transparent;
-    transition: background-color 0.15s;
+    transition: background-color 0.25s;
 }
 
 .formationResult {
@@ -379,9 +379,9 @@ a.pinkButton {
 
 #carteEurope {
     width: 30vw;
-    max-width: 315px;
+    max-width: 280px;
     min-width: 200px;
-    margin: 7px;
+    margin: 10px;
 }
 
 #chiffresCles {
@@ -405,7 +405,6 @@ a.pinkButton {
     text-align: center;
     color: white;
     padding: 2px;
-    box-shadow: 0 0 5px #222222;
 }
 
 .chiffreCle {
@@ -422,4 +421,12 @@ a.pinkButton {
     background-size: 130vw auto;
     background-position: center 25%;
     background-repeat: no-repeat;
+}
+
+.button {
+    transition: transform 0.15s;
+}
+
+.button:hover {
+    transform: scale(1.025, 1.025);
 }
