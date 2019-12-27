@@ -276,6 +276,7 @@ a.pinkButton {
 
 #sectionEnSavoirPlusEtudesIUT .pinkButton {
     margin: 30px 7px 30px 7px;
+    border-radius: 3px;
 }
 
 #formationsContainer > a {
@@ -397,6 +398,7 @@ a.pinkButton {
     text-align: center;
     color: white;
     padding: 2px;
+    box-shadow: 0 0 5px #222222;
 }
 
 .chiffreCle {
