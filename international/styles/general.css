@@ -47,6 +47,10 @@
     text-decoration: none
 }
 
+#contentHeader > .tilesBoard > .tile:hover .tileTitle {
+    background-color: rgba(238, 40, 124, 1);
+}
+
 #contentHeader > .tilesBoard > .tile > .tileImage {
     height: 170px;
     width: 100%;
@@ -61,6 +65,7 @@
     margin-top: -33px;
     height: 33px;
     background-color: rgba(238, 40, 124, 0.7);
+    transition: background-color 0.25s;
 }
 
 #contentHeader > .tilesBoard > .tile > .tileTitle > span {
@@ -182,6 +187,8 @@
     flex: 1;
     padding: 5px 0;
     cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.15s;
 }
 
 .formationResult {
@@ -203,19 +210,19 @@
     display: flex;
 }
 
-#formationSelectorInformatique.selectedFormationSelector {
+#formationSelectorInformatique.selectedFormationSelector, #formationSelectorInformatique:hover {
     background-color: #208d81;
 }
 
-#formationSelectorMediasNum.selectedFormationSelector {
+#formationSelectorMediasNum.selectedFormationSelector, #formationSelectorMediasNum:hover {
     background-color: #ae3769;
 }
 
-#formationSelectorGestion.selectedFormationSelector {
+#formationSelectorGestion.selectedFormationSelector, #formationSelectorGestion:hover {
     background-color: #ae7237;
 }
 
-#formationSelectorCommerce.selectedFormationSelector {
+#formationSelectorCommerce.selectedFormationSelector, #formationSelectorCommerce:hover {
     background-color: #9aa348;
 }
 
@@ -414,4 +421,5 @@ a.pinkButton {
     background-image: url("../images/illustrations/background-section-chiffres.jpg");
     background-size: 130vw auto;
     background-position: center 25%;
+    background-repeat: no-repeat;
 }
