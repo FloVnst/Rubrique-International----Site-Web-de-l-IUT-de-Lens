@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
 }
 
 #contentHeader > h1 {
@@ -29,15 +28,15 @@
     font-size: 28px;
 }
 
-#contentHeader > .tilesBord {
+#contentHeader > .tilesBoard {
     display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse;
     width: 100%;
-    margin: 25px 0;
+    margin-top: 25px;
 }
 
-#contentHeader > .tilesBord > .tile {
+#contentHeader > .tilesBoard > .tile {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -48,21 +47,22 @@
     text-decoration: none
 }
 
-#contentHeader > .tilesBord > .tile > .tileImage {
-    height: 150px;
+#contentHeader > .tilesBoard > .tile > .tileImage {
+    height: 170px;
     width: 100%;
     background-color: black;
 }
 
-#contentHeader > .tilesBord > .tile > .tileTitle {
+#contentHeader > .tilesBoard > .tile > .tileTitle {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #ee287c;
+    margin-top: -33.2px;
+    background-color: rgba(238, 40, 124, 0.7);
 }
 
-#contentHeader > .tilesBord > .tile > .tileTitle > span {
+#contentHeader > .tilesBoard > .tile > .tileTitle > span {
     font-size: 20px;
     text-align: center;
     color: white;
@@ -77,17 +77,17 @@
     background-color: #333333;
 }
 
-#sectionAssetsIUT {
+#pageContent > section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #assetsIUT {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 20px;
 }
 
 #assetsIUT > div {
@@ -134,11 +134,198 @@
 #tileEtudierALIUT > .tileImage {
     background-image: url("../images/illustrations/vue-globale-iut.jpg");
     background-size: 100% auto;
-    background-position: center 50%;
+    background-position: center 60%;
 }
 
 #tilePartirALEtranger > .tileImage {
     background-image: url("../images/illustrations/ireland.jpg");
     background-size: 100% auto;
-    background-position: center 50%;
+    background-position: center 60%;
+}
+
+#formationsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-width: 240px;
+    margin: 20px 10px;
+}
+
+#formationsMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #4D4D4D;
+    flex-wrap: wrap;
+}
+
+.formationSelector p {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.formationSelector img {
+    height: 30px;
+    margin: 5px;
+}
+
+.formationSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    min-width: 240px;
+    flex: 1;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.formationResult {
+    display: none;
+    flex-direction: column;
+    width: inherit;
+    background-color: #222222;
+}
+
+.formationResult > h3 {
+    margin-left: 25px;
+}
+
+#formationsResults {
+    width: 100%;
+}
+
+.selectedFormation {
+    display: flex;
+}
+
+#formationSelectorInformatique.selectedFormationSelector {
+    background-color: #208d81;
+}
+
+#formationSelectorMediasNum.selectedFormationSelector {
+    background-color: #ae3769;
+}
+
+#formationSelectorGestion.selectedFormationSelector {
+    background-color: #ae7237;
+}
+
+#formationSelectorCommerce.selectedFormationSelector {
+    background-color: #9aa348;
+}
+
+.formationResult > h3 {
+    color: white;
+}
+
+.formationResult ul {
+    margin-top: 0;
+}
+
+.formationResult li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.formationResult a {
+    color: white;
+}
+
+.formationResult li:before {
+    content: '■';
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+}
+
+#formationsInformatique li:before {
+    color: #208d81;
+}
+
+#formationsMediasNum li:before {
+    color: #ee287c;
+}
+
+#formationsGestion li:before {
+    color: #ee8b29;
+}
+
+#formationsCommerce li:before {
+    color: #cedd45;
+}
+
+a.pinkButton {
+    color: white;
+    background-color: #ee287c;
+    padding: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#sectionEnSavoirPlusEtudesIUT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px !important;
+}
+
+#sectionEnSavoirPlusEtudesIUT .pinkButton {
+    margin: 30px 7px 30px 7px;
+}
+
+#formationsContainer > a {
+    margin: 20px 5px 0 0;
+    align-self: flex-end;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+#addressContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#addressContainer > address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    color: white;
+    font-size: 15px;
+    margin: 15px 7px;
+    background-color: #222222;
+    padding: 15px;
+}
+
+#addressContainer h2 {
+    font-size: 18px;
+    margin: 0 7px;
+}
+
+#addressContainer > address > div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#addressContainer > address > div > span {
+    margin: 7px 15px;
+}
+
+#addressContainer > address a {
+    color: white;
+}
+
+#addressContainer > address p {
+    color: grey;
+    margin: 2px 7px 15px 7px;
 }

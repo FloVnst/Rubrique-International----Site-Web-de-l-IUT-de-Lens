@@ -12,6 +12,21 @@ body {
     background-color: #1a1a1a;
 }
 
+a {
+    display: inline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+a[target="_blank"]:after {
+    content: url("../images/icons/external-link.svg");
+    display: inline-flex;
+    vertical-align: middle;
+    height: auto;
+    width: .95em;
+    margin-left: 5px;
+}
 
 /* --- En-tête --- */
 
