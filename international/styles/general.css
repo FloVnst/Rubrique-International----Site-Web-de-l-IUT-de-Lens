@@ -330,3 +330,78 @@ a.pinkButton {
     color: grey;
     margin: 2px 7px 15px 7px;
 }
+
+#sectionEuropeContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#sectionEuropeContent > #distances {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #222222;
+    margin: 7px;
+}
+
+#distances > p {
+    min-width: 160px;
+    margin: 7px;
+    text-align: center;
+}
+
+#sectionEuropeContent > #distances .hours {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#sectionEuropeContent > #distances .ville {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#sectionEuropeContent > #distances .connecteur {
+    font-size: 12px;
+    color: #eeeeee;
+}
+
+#carteEurope {
+    width: 30vw;
+    max-width: 315px;
+    min-width: 200px;
+    margin: 7px;
+}
+
+#chiffresCles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#chiffresCles > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #222222;
+    align-items: center;
+    margin: 7px;
+    width: 10vw;
+    min-width: 120px;
+    min-height: 120px;
+    height: 10vw;
+    text-align: center;
+    color: white;
+}
+
+.chiffreCle {
+    font-size: 20px;
+}
+
+.chiffreTitle {
+    color: #eeeeee;
+}
