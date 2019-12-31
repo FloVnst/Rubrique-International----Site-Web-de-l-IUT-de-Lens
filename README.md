@@ -34,17 +34,6 @@ Les fichiers du site sont organisés de la façon suivante :
     |          |          |           |---------index.html : Page "Partir à l'étranger", traduite en anglais
     |          |          |
     |          |          |
-    |          |          |---------venir-etudier-a-l-iut : fichiers html de la partie "Venir étudier à l'IUT", traduite en anglais
-    |          |          |           |
-    |          |          |           |---------images : répertoire contenant les images utilisées uniquement dans la partie "Venir étudier à l'IUT", traduite en anglais
-    |          |          |           |
-    |          |          |           |---------scripts : répertoire contenant les fichiers javascript appliqués uniquement à la page (en anglais) "Venir étudier à l'IUT"
-    |          |          |           |
-    |          |          |           |---------styles : répertoire contenant les fichiers css appliqués uniquement à la page (en anglais) "Venir étudier à l'IUT"
-    |          |          |           |
-    |          |          |           |---------index.html  : Page "Venir étudier à l'IUT", traduite en anglais
-    |          |          |
-    |          |          |
     |          |          |---------scripts : répertoire contenant les fichiers javascript appliqués uniquement à la page (en anglais) "Partir à l'étranger" ou à la page (en anglais) "Partir à l'étranger" ou plusieurs de ses enfants
     |          |          |
     |          |          |
