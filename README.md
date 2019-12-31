@@ -85,22 +85,6 @@ Les fichiers du site sont organisés de la façon suivante :
     |          |
     |          |
     |          |
-    |          |---------venir-etudier-a-l-iut : fichiers html de la partie "Venir étudier à l'IUT"
-    |          |          |
-    |          |          |
-    |          |          |---------images : répertoire contenant les images utilisées uniquement dans la partie "Venir étudier à l'IUT"
-    |          |          |
-    |          |          |
-    |          |          |---------scripts : fichiers javascript concernant uniquement la page "Venir étudier à l'IUT"
-    |          |          |
-    |          |          |
-    |          |          |---------styles : fichiers css concernant uniquement la page "Venir étudier à l'IUT"
-    |          |          |
-    |          |          |
-    |          |          |---------index.html  : Page "Venir étudier à l'IUT"
-    |          |
-    |          |
-    |          |
     |          |---------index.html : Page d'accueil de la partie "International" (Homepage)
     |
     |
