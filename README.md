@@ -26,7 +26,7 @@ Les fichiers du site sont organisés de la façon suivante :
     |          |          |---------partir-a-l-etranger : répertoire contenant les fichiers html de la partie "Partir à l'étranger", traduite en anglais
     |          |          |           |
     |          |          |           |---------images : répertoire contenant les images utilisées uniquement dans la partie "Partir à l'étranger", traduite en anglais
-    |          |          |-          |
+    |          |          |           |
     |          |          |           |---------scripts : répertoire contenant les fichiers javascript appliqués uniquement à la page (en anglais) "Partir à l'étranger" ou plusieurs de ses enfants
     |          |          |           |
     |          |          |           |---------styles : répertoire contenant les fichiers css appliqués uniquement à la page (en anglais) "Partir à l'étranger" ou plusieurs de ses enfants
