@@ -90,6 +90,7 @@ a[target="_blank"]:after {
     align-self: flex-start;
     width: 120px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 #studentsLinks > ul {
