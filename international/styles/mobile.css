@@ -2,3 +2,7 @@
     width: 100vw;
     margin: 0;
 }
+
+#pictureBanner {
+    background-position: 50% 67%;
+}

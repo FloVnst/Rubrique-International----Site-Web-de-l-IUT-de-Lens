@@ -7,3 +7,32 @@
     width: 190px;
     height: 190px;
 }
+
+#pictureBanner {
+    background-attachment: fixed;
+    background-position: 50% 67vw;
+}
+
+@media screen and (max-width: 820px) {
+    #pictureBanner {
+        background-position: 50% 40vw !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #pictureBanner {
+        background-position: 50% 70vw !important;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #pictureBanner {
+        background-position: 50% 80vw !important;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #pictureBanner {
+        background-position: 50% 90vw !important;
+    }
+}
