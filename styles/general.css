@@ -89,6 +89,7 @@ a[target="_blank"]:after {
     flex-direction: column;
     align-self: flex-start;
     width: 120px;
+    cursor: pointer;
 }
 
 #studentsLinks > ul {
@@ -107,6 +108,11 @@ a[target="_blank"]:after {
     flex-direction: column;
     list-style: none;
     padding: 4px 7px;
+    transition: background-color 0.25s;
+}
+
+#studentsLinks > ul > li:hover {
+    background-color: #444444;
 }
 
 #studentsLinks > p {
@@ -117,7 +123,6 @@ a[target="_blank"]:after {
     margin: 0;
     background-color: #4D4D4D;
     color: white;
-    cursor: pointer;
     font-size: 15px;
     height: 18px;
 }
@@ -125,6 +130,9 @@ a[target="_blank"]:after {
 #studentsLinks a {
     color: white;
     font-size: 14px;
+    width: 100%;
+    height: inherit;
+    text-decoration: none;
 }
 
 #studentsLinks:hover ul {
