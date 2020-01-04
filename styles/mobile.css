@@ -130,6 +130,7 @@
 }
 
 
+
 /* Suppression d'éléments si la largeur d'écran est trop petite */
 
 @media screen and (max-width: 340px) {
@@ -149,6 +150,16 @@
         display: none;
     }
 }
+
+
+
+/* --- Contenu de la page --- */
+
+#pageContent > section {
+    width: 100vw;
+    margin: 0;
+}
+
 
 
 /* Pied de page */

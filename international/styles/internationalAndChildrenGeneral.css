@@ -5,3 +5,7 @@ a.pinkButton {
     margin-left: 7px;
     margin-right: 7px;
 }
+
+#contentHeader > h1 {
+    background-color: #ee287c;
+}

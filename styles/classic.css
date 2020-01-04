@@ -1,3 +1,5 @@
+/* --- En-tête de la page --- */
+
 #logoIUT > img {
     width: 90px;
 }
@@ -96,6 +98,20 @@
     width: 100%;
     height: inherit;
 }
+
+
+
+/* --- Contenu de la page --- */
+
+#pageContent > section {
+    width: 94vw;
+    margin: 0 0 0 2vw;
+}
+
+#pictureBanner {
+    background-attachment: fixed;
+}
+
 
 
 /* Pied de page */

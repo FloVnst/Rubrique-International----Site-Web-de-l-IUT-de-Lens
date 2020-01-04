@@ -1,409 +1,404 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>International - IUT de Lens</title>
 
-        <!-- Styles appliqués à l'ensemble du site -->
-        <link rel="stylesheet" type="text/css" href="../styles/general.css">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../styles/mobile.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../styles/classic.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International - IUT de Lens</title>
 
-        <!-- Styles appliqués à cette page -->
-        <link rel="stylesheet" type="text/css" href="styles/general.css">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="styles/mobile.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="styles/classic.css">
+    <!-- Styles appliqués à l'ensemble du site -->
+    <link rel="stylesheet" type="text/css" href="../styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../styles/classic.css">
 
-        <!-- Styles appliqués à cette page et/ou aux pages des rubriques enfant -->
-        <link rel="stylesheet" type="text/css" href="styles/internationalAndChildrenGeneral.css">
+    <!-- Styles appliqués à cette page -->
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="styles/classic.css">
 
-    </head>
-    
-
-    <body>
-
-        <!-- Barre d'en-tête -->
-        <header id="pageHeader">
-
-            <a id="logoIUT" href="http://www.iut-lens.univ-artois.fr">
-                <img alt="Page d'accueil" src="../images/icons/logo-iut.svg">
-            </a>
-
-            <!-- Partie droite du header -->
-            <div id="rightSideHeader">
-
-                <!-- Menu commun à la version classique et la version mobile -->
-                <div id="commonMenu">
-
-                    <!-- Boutons Luminosité et Langue -->
-                    <div id="controls">
-                        <a href="">
-                            <img id="languageButton" class="controlIcon" alt="Traduire le site en anglais" src="../images/icons/uk-flag.svg">
-                        </a>
-                        <button>
-                            <img id="luminosityButton" class="controlIcon" alt="Mode sombre" src="../images/icons/dark-mode.svg">
-                        </button>
-                    </div>
-
-                    <!-- Menu déroulant avec des liens pour les étudiants -->
-                    <div id="studentsLinks">
-                        <p>Étudiants ▼</p>
-                        <ul>
-                            <li><a href="">ENT</a></li>
-                            <li><a href="">Emploi du temps</a></li>
-                            <li><a href="">Bibliothèque</a></li>
-                            <li><a href="">Annuaire</a></li>
-                            <li><a href="">Intranet</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Bouton "hamburger" pour afficher le menu de navigation mobile -->
-                    <div id="hamburgerButton">
-                        <div></div>
-                    </div>
-
-                </div>
+    <!-- Styles appliqués à cette page et/ou aux pages des rubriques enfant -->
+    <link rel="stylesheet" type="text/css" href="styles/internationalAndChildrenGeneral.css">
+</head>
 
 
-                <!-- Menu de navigation (responsive) -->
-                <nav id="navMenusContainer">
-                    <ul id="navMenus">
-                        <li id="navMenu0" class="navMenu">
-                            <div class="navTitle">
-                                <a href="">FORMATIONS</a>
-                                <div>▼</div>
-                            </div>
-                            <ul class="submenusNav navMenu">
-                                <li><a href="">Offre de formation</a></li>
-                                <li><a href="">Formation tout au long de la vie</a></li>
-                                <li><a href="">L'alternance</a></li>
-                                <li><a href="">Comment candidater à l'IUT ?</a></li>
-                                <li><a href="">S'inscrire à l'IUT de Lens</a></li>
-                                <li><a href="">Certifications : CLES/C2i/projet Voltaire</a></li>
-                                <li><a href="">Entrepreneuriat</a></li>
-                                <li><a href="">Accompagnement des étudiants</a></li>
-                            </ul>
-                        </li>
+<body>
 
-                        <li id="navMenu1" class="navMenu">
-                            <div class="navTitle">
-                                <a href="">INTERNATIONAL</a>
-                                <div>▼</div>
-                            </div>
-                            <ul class="submenusNav">
-                                <li><a href="">Venir étudier à l'IUT</a></li>
-                                <li><a href="">Partir à l'étranger</a></li>
-                            </ul>
-                        </li>
+<!-- Barre d'en-tête -->
+<header id="pageHeader">
 
-                        <li id="navMenu2" class="navMenu">
-                            <div class="navTitle">
-                                <a href="">VIE À L'IUT</a>
-                                <div>▼</div>
-                            </div>
-                            <ul class="submenusNav">
-                                <li><a href="">Bibliothèque</a></li>
-                                <li><a href="">Santé/Handicap/Assistantes sociales</a></li>
-                                <li><a href="">Services et outils numériques</a></li>
-                                <li><a href="">Sport</a></li>
-                                <li><a href="">Culture</a></li>
-                                <li><a href="">Vie pratique</a></li>
-                                <li><a href="">Vie associative</a></li>
-                                <li><a href="">Job étudiant</a></li>
-                            </ul>
-                        </li>
+    <a id="logoIUT" href="http://www.iut-lens.univ-artois.fr">
+        <img alt="Page d'accueil" src="../images/icons/logo-iut.svg">
+    </a>
 
-                        <li id="navMenu3" class="navMenu">
-                            <div class="navTitle">
-                                <a href="">ENTREPRISES</a>
-                                <div>▼</div>
-                            </div>
-                            <ul class="submenusNav">
-                                <li><a href="">Des formations à votre service</a></li>
-                                <li><a href="">Taxe d'apprentissage</a></li>
-                                <li><a href="">Proposer un stage/un emploi</a></li>
-                                <li><a href="">Proposer un partenariat</a>
-                            </ul>
-                        </li>
+    <!-- Partie droite du header -->
+    <div id="rightSideHeader">
 
-                        <li id="navMenu4" class="navMenu">
-                            <div class="navTitle">
-                                <a href="">IUT</a>
-                                <div>▼</div>
-                            </div>
-                            <ul class="submenusNav">
-                                <li><a href="">Mot de la directrice</a></li>
-                                <li><a href="">IUT de Lens en bref</a></li>
-                                <li><a href="">Organisation</a></li>
-                                <li><a href="">Les atouts de l'IUT</a>
-                                <li><a href="">Contacts et plan d'accès</a>
-                                <li><a href="">Médias</a>
-                            </ul>
-                        </li>
+        <!-- Menu commun à la version classique et la version mobile -->
+        <div id="commonMenu">
 
-                    </ul>
-                </nav>
-
+            <!-- Boutons Luminosité et Langue -->
+            <div id="controls">
+                <a href="../en/international/">
+                    <img id="languageButton" class="controlIcon" alt="Traduire le site en anglais" src="../images/icons/uk-flag.svg">
+                </a>
+                <button>
+                    <img id="luminosityButton" class="controlIcon" alt="Mode sombre" src="../images/icons/dark-mode.svg">
+                </button>
             </div>
 
-        </header>
+            <!-- Menu déroulant avec des liens pour les étudiants -->
+            <div id="studentsLinks">
+                <p>Étudiants ▼</p>
+                <ul>
+                    <li><a href="">ENT</a></li>
+                    <li><a href="">Emploi du temps</a></li>
+                    <li><a href="">Bibliothèques</a></li>
+                    <li><a href="">Annuaire</a></li>
+                    <li><a href="">Intranet</a></li>
+                </ul>
+            </div>
 
-
-        <div id="pageContent">
-
-            <!-- Bannière contenant l'image d'en-tête -->
-            <div id="pictureBanner"></div>
-
-            <!-- Section d'en-tête, contenant les liens vers les pages enfant -->
-            <section id="contentHeader" class="coloredBlock">
-
-                <h1>International</h1>
-
-                <div class="tilesBoard">
-
-                    <a id="tilePartirALEtranger" class="tile button" href="">
-                        <div class="tileImage"></div>
-                        <span class="tileTitle"><span>Partir à l'étranger ►</span></span>
-                    </a>
-
-                    <a id="tileEtudierALIUT" class="tile button" href="">
-                        <div class="tileImage"></div>
-                        <span class="tileTitle"><span>Étudier à l'IUT ►</span></span>
-                    </a>
-
-                </div>
-
-            </section>
-
-
-            <!-- Section "Pourquoi venir à l'IUT ?" -->
-            <section id="sectionAssetsIUT" class="coloredBlock">
-                <h2>Pourquoi venir étudier à l'IUT de Lens ?</h2>
-
-                <div id="assetsIUT">
-
-                    <div>
-                        <img alt="" src="images/icons/accompagnement.svg">
-                        <p>Un suivi personnalisé<br/>
-                            <span>et une évaluation en contrôle continu</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <img alt="" src="images/icons/bonnes-conditions-de-travail.svg">
-                        <p>D'excellentes conditions de travail<br/>
-                            <span>et une ambiance conviviale</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <img alt="" src="images/icons/equipe-enseignante-diversifiee.svg">
-                        <p>Une équipe enseignante diversifiée<br/>
-                            <span>composée de chercheurs, de professeurs du secondaire et de professionnels</span>
-                        </p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- Section Une large offre de formation -->
-            <section id="sectionFormations" class="coloredBlock">
-
-                <h2>Une large offre de formation</h2>
-
-                <div id="formationsContainer">
-                    <div id="formationsMenu">
-                        <div id="formationSelectorInformatique" class="formationSelector selectedFormationSelector">
-                            <img alt="" src="images/icons/informatique.svg">
-                            <p>Informatique</p>
-                        </div>
-
-                        <div id="formationSelectorMediasNum" class="formationSelector">
-                            <img alt="" src="images/icons/mediasNum.svg">
-                            <p>Médias numériques</p>
-                        </div>
-
-                        <div id="formationSelectorGestion" class="formationSelector">
-                            <img alt="" src="images/icons/management.svg">
-                            <p>Gestion</p>
-                        </div>
-
-                            <div id="formationSelectorCommerce" class="formationSelector">
-                                <img alt="" src="images/icons/commerce.svg">
-                                <p>Commerce</p>
-                            </div>
-                    </div>
-
-                    <!-- Résultats -->
-                    <div id="formationsResults">
-                        <div id="formationsInformatique" class="formationResult selectedFormation">
-                            <h3>Informatique</h3>
-                            <ul>
-                                <li><a target="_blank" href="">DUT informatique</a></li>
-                                <li><a target="_blank" href="">Licence Professionnelle Conception, développement et test de logiciel, parcours Développement Informatique et Outils Collaboratifs</a></li>
-                            </ul>
-                        </div>
-
-                        <div id="formationsMediasNum" class="formationResult">
-                            <h3>Médias Numériques</h3>
-                            <ul>
-                                <li><a target="_blank" href="">DUT MMI : Métiers du Multimédia et de l’Internet</a></li>
-                                <li><a target="_blank" href="">Licence Professionnelle Conception, rédaction et réalisation web</a></li>
-                                <li><a target="_blank" href="">DU PCM : Production de Contenu Multimédia</a></li>
-                            </ul>
-                        </div>
-
-                        <div id="formationsGestion" class="formationResult">
-                            <h3>Gestion</h3>
-                            <ul>
-                                <li><a target="_blank" href="">DUT GEA : Gestion des Entreprises et des Administrations</a></li>
-                                <li><a target="_blank" href="">Licence Professionnelle Assistant spécialisé en technologies de l’information et de la communication</a></li>
-                                <li><a target="_blank" href="">DU PCM : Production de Contenu Multimédia</a></li>
-                            </ul>
-
-                        </div>
-
-                        <div id="formationsCommerce" class="formationResult">
-                            <h3>Commerce</h3>
-                            <ul>
-                                <li><a target="_blank" href="">DUT TC : Techniques de commercialisation</a></li>
-                                <li><a target="_blank" href="">Licence Professionnelle Commerce et distribution – Management du Point de Vente</a></li>
-                                <li><a target="_blank" href="">Licence Professionnelle E-Commerce et Marketing Numérique – Processus de commercialisation sur le web</a></li>
-                                <li><a target="_blank" href="">Licence Professionnelle Commercialisation de Produits et Services – Commercialisation des Biens et Services Interentreprises</a></li>
-                                <li><a target="_blank" href="">Licence Professionnelle Métiers du tourisme : Commercialisation des produits touristiques</a></li>
-                                <li><a target="_blank" href="">DU Accueil et Communication Touristiques</a></li>
-                                <li><a target="_blank" href="">DU Collaborateur Commercial et de Gestion</a></li>
-                                <li><a target="_blank" href="">DU Community Manager</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <a href="" target="_blank">
-                        Voir les autres formations de l'université d'Artois
-                    </a>
-
-                </div>
-
-            </section>
-
-
-            <!-- Section Europe -->
-            <section id="sectionEurope" class="coloredBlock">
-                <h2>L'Europe à portée de main</h2>
-                <div id="sectionEuropeContent">
-                    <img id="carteEurope" alt="" src="images/illustrations/carte-europe.svg">
-                    <div id="distances">
-                        <p><span class="hours">1h10</span><span class="connecteur"> de </span><span class="ville">Paris</span></p>
-                        <p><span class="hours">1h30</span><span class="connecteur"> de </span><span class="ville">Bruxelles</span></p>
-                        <p><span class="hours">40min</span><span class="connecteur"> de </span><span class="ville">Lille</span></p>
-                        <p><span class="hours">15min</span><span class="connecteur"> d'</span><span class="ville">Arras</span></p>
-                        <p><span class="hours">10min</span><span class="connecteur"> de </span><span class="ville">Béthune</span></p>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Section L'IUT en chiffres -->
-            <section id="sectionChiffres">
-                <h2>L'IUT de Lens en chiffres</h2>
-                <div id="chiffresCles">
-                    <p><span class="chiffreCle">1 200<br/></span><span class="chiffreTitle">Étudiants</span></p>
-                    <p><span class="chiffreCle">66<br/></span><span class="chiffreTitle">Enseignants permanents</span></p>
-                    <p><span class="chiffreCle">200<br/></span><span class="chiffreTitle">Enseignants vacataires et professionnels</span></p>
-                    <p><span class="chiffreCle">10 000 m²<br/></span><span class="chiffreTitle">de locaux</span></p>
-                    <p><span class="chiffreCle">800<br/></span><span class="chiffreTitle">postes informatiques</span></p>
-                </div>
-            </section>
-
-
-            <section id="sectionEnSavoirPlusEtudesIUT" class="coloredBlock">
-                <h2 class="hidden">En savoir plus sur les études à l'IUT de Lens</h2>
-                <a href="" class="pinkButton button">
-                    En savoir plus sur les études à l'IUT de Lens ►
-                </a>
-            </section>
-
-
-            <!-- Section contact -->
-            <section id="sectionContact">
-                <h2 class="hidden">Contact</h2>
-                <div id="addressContainer">
-                    <address>
-                        <p class="addressTitle">Université d'Artois</p>
-                        <p class="addressContent">Service Relations Internationales</p>
-                        <div>
-                            <span>
-                                9 rue du Temple – BP 10665<br/>
-                                62030 Arras cedex<br/>
-                                France<br/>
-                            </span>
-                            <span>
-                                <a href="mailto:sri@univ-artois.fr">sri@univ-artois.fr</a>
-                            </span>
-                        </div>
-                    </address>
-
-                    <address>
-                        <p class="addressTitle">IUT de Lens</p>
-                        <p class="addressContent">Service Relations Internationales</p>
-                        <div>
-                            <span>
-                                <a href="tel:+33321733232">+33 (0)3 21 73 32 32</a>
-                            </span>
-                            <span>
-                                <a href="mailto:sri@univ-artois.fr">ri@iut-lens.univ-artois.fr</a>
-                            </span>
-                        </div>
-                    </address>
-
-                </div>
-
-            </section>
+            <!-- Bouton "hamburger" pour afficher le menu de navigation mobile -->
+            <div id="hamburgerButton">
+                <div></div>
+            </div>
 
         </div>
 
 
-        <!-- Pied de page -->
-        <footer id="pageFooter">
-
-            <nav>
-
-                <div id="footerLinksContainer">
-                    <div id="footerLinks">
-                        <a href="">Contact</a>
-                        <a href="">Mentions légales</a>
+        <!-- Menu de navigation (responsive) -->
+        <nav id="navMenusContainer">
+            <ul id="navMenus">
+                <li id="navMenu0" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">FORMATIONS</a>
+                        <div>▼</div>
                     </div>
+                    <ul class="submenusNav navMenu">
+                        <li><a href="">Offre de formation</a></li>
+                        <li><a href="">Formation tout au long de la vie</a></li>
+                        <li><a href="">L'alternance</a></li>
+                        <li><a href="">Comment candidater à l'IUT ?</a></li>
+                        <li><a href="">S'inscrire à l'IUT de Lens</a></li>
+                        <li><a href="">Certifications : CLES/C2i/projet Voltaire</a></li>
+                        <li><a href="">Entrepreneuriat</a></li>
+                        <li><a href="">Accompagnement des étudiants</a></li>
+                    </ul>
+                </li>
 
-                    <div id="socialNetworks">
-                        <a href=""><img alt="Facebook" src="../images/icons/facebook-button.svg"></a>
-                        <a href=""><img alt="Twitter" src="../images/icons/twitter-button.svg"></a>
-                        <a href=""><img alt="Linkedin" src="../images/icons/linkedin-button.svg"></a>
-                        <a href=""><img alt="Youtube" src="../images/icons/youtube-button.svg"></a>
+                <li id="navMenu1" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">INTERNATIONAL</a>
+                        <div>▼</div>
                     </div>
+                    <ul class="submenusNav">
+                        <li><a href="venir-etudier-a-l-iut">Venir étudier à l'IUT</a></li>
+                        <li><a href="partir-a-l-etranger">Partir à l'étranger</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu2" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">VIE À L'IUT</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Bibliothèque</a></li>
+                        <li><a href="">Santé/Handicap/Assistantes sociales</a></li>
+                        <li><a href="">Services et outils numériques</a></li>
+                        <li><a href="">Sport</a></li>
+                        <li><a href="">Culture</a></li>
+                        <li><a href="">Vie pratique</a></li>
+                        <li><a href="">Vie associative</a></li>
+                        <li><a href="">Job étudiant</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu3" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">ENTREPRISES</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Des formations à votre service</a></li>
+                        <li><a href="">Taxe d'apprentissage</a></li>
+                        <li><a href="../entreprises/proposer-un-stage-ou-un-emploi">Proposer un stage/un emploi</a></li>    <!-- Page contenant le formulaire de contact pour les entreprises -->
+                        <li><a href="">Proposer un partenariat</a>
+                    </ul>
+                </li>
+
+                <li id="navMenu4" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">IUT</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Mot de la directrice</a></li>
+                        <li><a href="">IUT de Lens en bref</a></li>
+                        <li><a href="">Organisation</a></li>
+                        <li><a href="">Les atouts de l'IUT</a>
+                        <li><a href="">Contacts et plan d'accès</a>
+                        <li><a href="">Médias</a>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<div id="pageContent">
+
+    <!-- Bannière contenant l'image d'en-tête -->
+    <div id="pictureBanner"></div>
+
+    <!-- Section d'en-tête, contenant les liens vers les pages enfant -->
+    <section id="contentHeader" class="coloredBlock">
+
+        <h1>International</h1>
+
+        <div class="tilesBoard">
+
+            <a id="tilePartirALEtranger" class="tile button" href="partir-a-l-etranger">
+                <div class="tileImage"></div>
+                <span class="tileTitle"><span>Partir à l'étranger ►</span></span>
+            </a>
+
+            <a id="tileEtudierALIUT" class="tile button" href="etudier-a-l-iut">
+                <div class="tileImage"></div>
+                <span class="tileTitle"><span>Venir étudier à l'IUT ►</span></span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Section "Pourquoi venir à l'IUT ?" -->
+    <section id="sectionAssetsIUT" class="coloredBlock">
+        <h2>Pourquoi venir étudier à l'IUT de Lens ?</h2>
+
+        <div id="assetsIUT">
+
+            <div>
+                <img alt="" src="images/icons/accompagnement.svg">
+                <p>Un suivi personnalisé<br>
+                    <span>et une évaluation en contrôle continu</span>
+                </p>
+            </div>
+
+            <div>
+                <img alt="" src="images/icons/bonnes-conditions-de-travail.svg">
+                <p>D'excellentes conditions de travail<br>
+                    <span>et une ambiance conviviale</span>
+                </p>
+            </div>
+
+            <div>
+                <img alt="" src="images/icons/equipe-enseignante-diversifiee.svg">
+                <p>Une équipe enseignante diversifiée<br>
+                    <span>composée de chercheurs, de professeurs du secondaire et de professionnels</span>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Section Une large offre de formation -->
+    <section id="sectionFormations" class="coloredBlock">
+
+        <h2>Une large offre de formation</h2>
+
+        <div id="formationsContainer">
+            <div id="formationsMenu">
+                <div id="formationSelectorInformatique" class="formationSelector selectedFormationSelector">
+                    <img alt="" src="images/icons/informatique.svg">
+                    <p>Informatique</p>
                 </div>
 
-                <div id="copyrightBanner">
-                    <p>© 2020 Florian Vaneste – Thomas Cottrez – Tristan Leroy. Tous droits réservés.</p>
+                <div id="formationSelectorMediasNum" class="formationSelector">
+                    <img alt="" src="images/icons/mediasNum.svg">
+                    <p>Médias numériques</p>
                 </div>
 
-            </nav>
+                <div id="formationSelectorGestion" class="formationSelector">
+                    <img alt="" src="images/icons/management.svg">
+                    <p>Gestion</p>
+                </div>
 
-            <a id="logoUniv" href=""><img alt="Logo de l'université d'Artois" src="../images/icons/logo-universite-d-artois.svg"></a>
+                <div id="formationSelectorCommerce" class="formationSelector">
+                    <img alt="" src="images/icons/commerce.svg">
+                    <p>Commerce</p>
+                </div>
+            </div>
 
-        </footer>
+            <!-- Résultats -->
+            <div id="formationsResults">
+                <div id="formationsInformatique" class="formationResult selectedFormation">
+                    <h3>Informatique</h3>
+                    <ul>
+                        <li><a target="_blank" href="">DUT informatique</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle Conception, développement et test de logiciel, parcours Développement Informatique et Outils Collaboratifs</a></li>
+                    </ul>
+                </div>
+
+                <div id="formationsMediasNum" class="formationResult">
+                    <h3>Médias Numériques</h3>
+                    <ul>
+                        <li><a target="_blank" href="">DUT MMI : Métiers du Multimédia et de l’Internet</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle Conception, rédaction et réalisation web</a></li>
+                    </ul>
+                </div>
+
+                <div id="formationsGestion" class="formationResult">
+                    <h3>Gestion</h3>
+                    <ul>
+                        <li><a target="_blank" href="">DUT GEA : Gestion des Entreprises et des Administrations</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle Métiers des ressources humaines : Assistant spécialisé en technologies de l’information et de la communication</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle Métiers de la gestion et de la comptabilité : Responsable de portefeuille clients en cabinet d’expertise</a></li>
+                    </ul>
+
+                </div>
+
+                <div id="formationsCommerce" class="formationResult">
+                    <h3>Commerce</h3>
+                    <ul>
+                        <li><a target="_blank" href="">DUT TC : Techniques de commercialisation</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle Commerce et distribution – Management du Point de Vente</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle E-Commerce et Marketing Numérique – Processus de commercialisation sur le web</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle Commercialisation de Produits et Services – Commercialisation des Biens et Services Interentreprises</a></li>
+                        <li><a target="_blank" href="">Licence Professionnelle Métiers du tourisme : Commercialisation des produits touristiques</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="" target="_blank">
+                Voir les autres formations de l'université d'Artois
+            </a>
+
+        </div>
+
+    </section>
 
 
-        <script src="../scripts/general.js"></script>
-        <script src="../scripts/navMenu.js"></script>
-        <script src="scripts/general.js"></script>
+    <!-- Section Europe -->
+    <section id="sectionEurope" class="coloredBlock">
+        <h2>L'Europe à portée de main</h2>
+        <div id="sectionEuropeContent">
+            <img id="carteEurope" alt="" src="images/illustrations/carte-europe.svg">
+            <div id="distances">
+                <p><span class="hours">1h10</span><span class="connecteur"> de </span><span class="ville">Paris</span></p>
+                <p><span class="hours">1h30</span><span class="connecteur"> de </span><span class="ville">Bruxelles</span></p>
+                <p><span class="hours">40min</span><span class="connecteur"> de </span><span class="ville">Lille</span></p>
+                <p><span class="hours">15min</span><span class="connecteur"> d'</span><span class="ville">Arras</span></p>
+                <p><span class="hours">10min</span><span class="connecteur"> de </span><span class="ville">Béthune</span></p>
+            </div>
+        </div>
+    </section>
 
-    </body>
-    
+
+    <!-- Section L'IUT en chiffres -->
+    <section id="sectionChiffres">
+        <h2>L'IUT de Lens en chiffres</h2>
+        <div id="chiffresCles">
+            <p><span class="chiffreCle">1 200<br></span><span class="chiffreTitle">Étudiants</span></p>
+            <p><span class="chiffreCle">66<br></span><span class="chiffreTitle">Enseignants permanents</span></p>
+            <p><span class="chiffreCle">200<br></span><span class="chiffreTitle">Enseignants vacataires et professionnels</span></p>
+            <p><span class="chiffreCle">10 000 m²<br></span><span class="chiffreTitle">de locaux</span></p>
+            <p><span class="chiffreCle">800<br></span><span class="chiffreTitle">postes informatiques</span></p>
+        </div>
+    </section>
+
+
+    <section id="sectionEnSavoirPlusEtudesIUT" class="coloredBlock">
+        <h2 class="hidden">En savoir plus sur les études à l'IUT de Lens</h2>
+        <a href="" class="pinkButton button">
+            En savoir plus sur les études à l'IUT de Lens ►
+        </a>
+    </section>
+
+
+    <!-- Section contact -->
+    <section id="sectionContact">
+        <h2 class="hidden">Contact</h2>
+        <div id="addressContainer">
+            <address>
+                <p class="addressTitle">Université d'Artois</p>
+                <p class="addressContent">Service Relations Internationales</p>
+                <div>
+                            <span>
+                                9 rue du Temple – BP 10665<br>
+                                62030 Arras cedex<br>
+                                France<br>
+                            </span>
+                    <span>
+                                <a href="mailto:sri@univ-artois.fr">sri@univ-artois.fr</a>
+                            </span>
+                </div>
+            </address>
+
+            <address>
+                <p class="addressTitle">IUT de Lens</p>
+                <p class="addressContent">Service Relations Internationales</p>
+                <div>
+                            <span>
+                                <a href="tel:+33321733232">+33 (0)3 21 73 32 32</a>
+                            </span>
+                    <span>
+                                <a href="mailto:sri@univ-artois.fr">ri@iut-lens.univ-artois.fr</a>
+                            </span>
+                </div>
+            </address>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- Pied de page -->
+<footer id="pageFooter">
+
+    <nav>
+
+        <div id="footerLinksContainer">
+            <div id="footerLinks">
+                <a href="">Contact</a>
+                <a href="">Mentions légales</a>
+            </div>
+
+            <div id="socialNetworks">
+                <a href=""><img alt="Facebook" src="../images/icons/facebook-button.svg"></a>
+                <a href=""><img alt="Twitter" src="../images/icons/twitter-button.svg"></a>
+                <a href=""><img alt="Linkedin" src="../images/icons/linkedin-button.svg"></a>
+                <a href=""><img alt="Youtube" src="../images/icons/youtube-button.svg"></a>
+            </div>
+        </div>
+
+        <div id="copyrightBanner">
+            <p>© 2020 Florian Vaneste – Thomas Cottrez – Tristan Leroy. Tous droits réservés.</p>
+        </div>
+
+    </nav>
+
+    <a id="logoUniv" href=""><img alt="Logo de l'université d'Artois" src="../images/icons/logo-universite-d-artois.svg"></a>
+
+</footer>
+
+
+<script src="../scripts/general.js"></script>
+<script src="../scripts/navMenu.js"></script>
+<script src="scripts/general.js"></script>
+
+</body>
+
 </html>
 
 <!-- TODO : Animation swipe menu de navigation mobile -->
