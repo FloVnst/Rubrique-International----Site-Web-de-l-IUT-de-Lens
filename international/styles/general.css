@@ -338,6 +338,7 @@
 #sectionEnSavoirPlusEtudesIUT .pinkButton {
     margin: 30px 7px 30px 7px;
     border-radius: 3px;
+    text-align: center;
 }
 
 #addressContainer {
