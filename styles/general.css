@@ -19,7 +19,7 @@ a {
 }
 
 a[target="_blank"]:after {
-    content: url("../images/icons/external-link.svg");
+    content: var(--externalLinkIcon);
     display: inline-flex;
     vertical-align: middle;
     height: auto;
@@ -38,7 +38,7 @@ a[target="_blank"]:after {
     background-color: var(--mainColor);
     position: sticky;
     top: 0;
-    box-shadow: 0 0 5px var(--lighterShade);
+    box-shadow: 0 0 5px #333333;
     z-index: 1000;
 }
 
@@ -67,20 +67,36 @@ a[target="_blank"]:after {
 
 #controls > button, #hamburgerButton {
     border: none;
-    background: none;
+    background-color: transparent;
     padding: none;
     cursor: pointer;
 }
 
 #controls {
+    margin: 0 auto;
+}
+
+#controls, #controls > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
 .controlIcon {
     margin: 5px;
+}
+
+#luminosityButton {
+    height: 25px;
+    width: 25px;
+    background-image: url("../images/icons/light-mode.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[data-theme=light] #luminosityButton {
+    background-image: url("../images/icons/dark-mode.svg");
 }
 
 #studentsLinks {
@@ -103,7 +119,7 @@ a[target="_blank"]:after {
 }
 
 #studentsLinks > ul > li {
-    background-color: var(--lighterShade);
+    background-color: var(--thirdColor);
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -112,7 +128,7 @@ a[target="_blank"]:after {
 }
 
 #studentsLinks > ul > li:hover {
-    background-color: #444444;
+    background-color: var(--fifthColor);
 }
 
 #studentsLinks > p {
@@ -196,11 +212,11 @@ a[target="_blank"]:after {
 }
 
 #pageContent>section.coloredBlock:nth-of-type(2n+1) {
-    background-color: var(--strongerShade);
+    background-color: var(--strongerSectionShade);
 }
 
 #pageContent>section.coloredBlock:nth-of-type(2n+2) {
-    background-color: var(--lighterShade);
+    background-color: var(--lighterSectionShade);
 }
 
 #pageContent > section > h2 {
@@ -298,7 +314,7 @@ a[target="_blank"]:after {
 }
 
 .button {
-    transition: transform 0.15s;
+    transition: transform, background-color 0.15s;
 }
 
 .button:hover {
@@ -316,20 +332,9 @@ a[target="_blank"]:after {
 }
 
 .pagePath > a, .pagePath > span {
-    color: white;
+    color: var(--fontColor1);
 }
 
 .pathCurrentPage {
-    color: grey !important;
-}
-
-.tableOfContents {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    background-color: #222222;
-}
-
-.tableOfContents > a {
-    color: white;
+    color: var(--fontColor3) !important;
 }

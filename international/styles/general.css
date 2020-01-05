@@ -4,6 +4,9 @@
     background-image: url("../images/illustrations/louvre-paris.jpg");
 }
 
+[data-theme=light] #pictureBanner {
+    background-image: url("../images/illustrations/louvre-paris-light.jpg");
+}
 
 /* Tableau de "tuiles" */
 
@@ -83,7 +86,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: var(--mainColor);
     margin: 10px;
     max-width: 220px;
     max-height: 220px;
@@ -126,7 +129,7 @@
     align-self: flex-end;
     padding: 5px;
     font-size: 14px;
-    color: white;
+    color: var(--fontColor1);
     text-align: right;
 }
 
@@ -135,7 +138,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: #4D4D4D;
+    background-color: var(--secondaryColor);
     flex-wrap: wrap;
 }
 
@@ -164,19 +167,19 @@
 }
 
 #formationSelectorInformatique.selectedFormationSelector, #formationSelectorInformatique:hover {
-    background-color: #208d81;
+    background-color: var(--darkBlue);
 }
 
 #formationSelectorMediasNum.selectedFormationSelector, #formationSelectorMediasNum:hover {
-    background-color: #ae3769;
+    background-color: var(--darkPink);
 }
 
 #formationSelectorGestion.selectedFormationSelector, #formationSelectorGestion:hover {
-    background-color: #ae7237;
+    background-color: var(--darkOrange);
 }
 
 #formationSelectorCommerce.selectedFormationSelector, #formationSelectorCommerce:hover {
-    background-color: #9aa348;
+    background-color: var(--darkGreen);;
 }
 
 #formationsResults {
@@ -187,12 +190,12 @@
     display: none;
     flex-direction: column;
     width: inherit;
-    background-color: #222222;
+    background-color: var(--bgColor);
 }
 
 .formationResult > h3 {
     margin-left: 25px;
-    color: white;
+    color: var(--fontColor1);
 }
 
 .formationResult ul {
@@ -212,23 +215,23 @@
 }
 
 .formationResult a {
-    color: white;
+    color: var(--fontColor1);
 }
 
 #formationsInformatique li:before {
-    color: #208d81;
+    color: var(--darkBlue);
 }
 
 #formationsMediasNum li:before {
-    color: #ee287c;
+    color: var(--darkPink);
 }
 
 #formationsGestion li:before {
-    color: #ee8b29;
+    color: var(--darkOrange);
 }
 
 #formationsCommerce li:before {
-    color: #cedd45;
+    color: var(--darkGreen);
 }
 
 .selectedFormation {
@@ -257,8 +260,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    background-color: #222222;
+    color: var(--fontColor1);
+    background-color: rgb(var(--fourthColor));
     margin: 7px;
 }
 
@@ -275,7 +278,7 @@
 
 #distances .connecteur {
     font-size: 12px;
-    color: #eeeeee;
+    color: var(--fontColor2);
 }
 
 #distances .ville {
@@ -293,6 +296,10 @@
     background-repeat: no-repeat;
 }
 
+[data-theme=light] #sectionChiffres {
+    background-image: url("../images/illustrations/background-section-chiffres-light.jpg");
+}
+
 #chiffresCles {
     display: flex;
     align-items: center;
@@ -304,7 +311,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(34, 34, 34, 0.9);
+    background-color: rgba(var(--fourthColor), 0.9);
     align-items: center;
     margin: 7px 10px;
     width: 10vw;
@@ -312,7 +319,7 @@
     min-height: 120px;
     height: 10vw;
     text-align: center;
-    color: white;
+    color: var(--fontColor1);
     padding: 2px;
 }
 
@@ -322,7 +329,7 @@
 }
 
 .chiffreTitle {
-    color: #eeeeee;
+    color: var(--fontColor1);
 }
 
 
@@ -354,10 +361,10 @@
     flex-direction: column;
     align-items: center;
     font-style: normal;
-    color: white;
+    color: var(--fontColor1);
     font-size: 15px;
     margin: 15px 15px;
-    background-color: #222222;
+    background-color: rgb(var(--fourthColor));
     padding: 15px;
 }
 
@@ -367,7 +374,7 @@ address > .addressTitle {
 }
 
 address > .addressContent {
-    color: grey;
+    color: var(--fontColor3);
     margin: 2px 7px 15px 7px;
 }
 
@@ -383,5 +390,8 @@ address > div > span {
 }
 
 address a {
-    color: white;
+    color: var(--fontColor1);
 }
+
+/* todo : améiorer contrastes txte address */
+/* todo : mettre fourth color en bg des sous-menus mobile */

@@ -87,11 +87,11 @@
     display: flex;
     align-items: center;
     padding: 5px 7px;
-    background-color: var(--lighterShade);
+    background-color: var(--thirdColor);
  }
 
 .submenusNav > li:hover {
-    background-color: #444444;
+    background-color: var(--fifthColor);
 }
 
 .submenusNav > li > a {

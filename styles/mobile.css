@@ -113,7 +113,7 @@
 
 .submenusNav {
     display: none;
-    background-color: #222222;
+    background-color: var(--thirdColor);
 }
 
 .submenusNav > li {
