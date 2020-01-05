@@ -187,9 +187,10 @@
                 <label>Nom de l'entreprise : </label><input type="text" name="companyName" required>
 
                 <fieldset>
-                    <legend>Localistation</legend>
+                    <legend>Coordonnées</legend>
                     <label>Pays : </label>
                     <select name="country" required>
+                        <option value="">-- Veuillez choisir un pays --</option>
                         <option value="1" selected>France</option>
                         <option value="2">Afghanistan</option>
                         <option value="3">Afrique Centrale</option>
@@ -258,7 +259,6 @@
                         <option value="75">Féroé</option>
                         <option value="76">Fidji</option>
                         <option value="77">Finlande</option>
-                        <option value="1">France</option>
                         <option value="79">Gabon</option>
                         <option value="80">Gambie</option>
                         <option value="81">Géorgie</option>
@@ -423,10 +423,8 @@
                     <label>Ville : </label><input type="text" name="city" required>
                     <label>Code Postal : </label><input type="text" name="postcode" required>
                     <label>Adresse : </label><input type="text" name="address" required>
-                </fieldset>
 
-                <fieldset>
-                    <legend>Contact</legend>
+
                     <label>Numéro de téléphone : </label><input type="text" name="phone">
                     <label>Adresse mail : </label><input type="email" name="mail">
                 </fieldset>
