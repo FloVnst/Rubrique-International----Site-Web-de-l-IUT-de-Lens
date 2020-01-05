@@ -1,0 +1,15 @@
+:root {
+    --mainColor: black;
+    --bgColor: #1a1a1a;
+    --lighterShade: #333333;
+    --strongerShade:#2c2c2c;
+    --secondaryColor: #4d4d4d;
+}
+
+[data-theme="light"] {
+    --mainColor: #858585;
+    --bgColor: #E0E0E0;
+    --lighterShade: #B8B8B8;
+    --strongerShade: #B0B0B0;
+    --secondaryColor: #D1D1D1;
+}
