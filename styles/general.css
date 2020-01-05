@@ -321,13 +321,9 @@ a[target="_blank"]:after {
     transform: scale(1.025, 1.025);
 }
 
-#contentHeaderContent {
-    width: 95%;
-}
-
 .pagePath {
     align-self: flex-start;
-    margin: 10px 0;
+    margin: 15px 2.5% 30px 2.5%;
     color: grey;
 }
 

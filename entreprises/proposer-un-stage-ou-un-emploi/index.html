@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International - IUT de Lens</title>
+
+    <!-- Styles appliqués à l'ensemble du site -->
+    <link rel="stylesheet" type="text/css" href="../../styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../styles/classic.css">
+
+    <!-- Styles appliqués à cette page -->
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="styles/classic.css">
+
+    <!-- Styles aux pages des rubriques enfant de la partie Entreprises -->
+    <link rel="stylesheet" type="text/css" href="../styles/companiesAndChildren.css">
+</head>
+
+
+<body>
+
+<!-- Barre d'en-tête -->
+<header id="pageHeader">
+
+    <a id="logoIUT" href="http://www.iut-lens.univ-artois.fr">
+        <img alt="Page d'accueil" src="../../images/icons/logo-iut.svg">
+    </a>
+
+    <!-- Partie droite du header -->
+    <div id="rightSideHeader">
+
+        <!-- Menu commun à la version classique et la version mobile -->
+        <div id="commonMenu">
+
+            <!-- Boutons Luminosité et Langue -->
+            <div id="controls">
+                <a href="">
+                    <img id="languageButton" class="controlIcon" alt="Traduire le site en anglais" src="../../images/icons/uk-flag.svg">
+                </a>
+                <button id="luminosityButton" class="controlIcon" onclick="changeTheme()"></button>
+            </div>
+
+            <!-- Menu déroulant avec des liens pour les étudiants -->
+            <div id="studentsLinks">
+                <p>Étudiants ▼</p>
+                <ul>
+                    <li><a href="">ENT</a></li>
+                    <li><a href="">Emploi du temps</a></li>
+                    <li><a href="">Bibliothèques</a></li>
+                    <li><a href="">Annuaire</a></li>
+                    <li><a href="">Intranet</a></li>
+                </ul>
+            </div>
+
+            <!-- Bouton "hamburger" pour afficher le menu de navigation mobile -->
+            <div id="hamburgerButton">
+                <div></div>
+            </div>
+
+        </div>
+
+
+        <!-- Menu de navigation (responsive) -->
+        <nav id="navMenusContainer">
+            <ul id="navMenus">
+                <li id="navMenu0" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">FORMATIONS</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav navMenu">
+                        <li><a href="">Offre de formation</a></li>
+                        <li><a href="">Formation tout au long de la vie</a></li>
+                        <li><a href="">L'alternance</a></li>
+                        <li><a href="">Comment candidater à l'IUT ?</a></li>
+                        <li><a href="">S'inscrire à l'IUT de Lens</a></li>
+                        <li><a href="">Certifications : CLES/C2i/projet Voltaire</a></li>
+                        <li><a href="">Entrepreneuriat</a></li>
+                        <li><a href="">Accompagnement des étudiants</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu1" class="navMenu">
+                    <div class="navTitle">
+                        <a href="../../international/">INTERNATIONAL</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="../../international/venir-etudier-a-l-iut">Venir étudier à l'IUT</a></li>
+                        <li><a href="../../international/partir-a-l-etranger">Partir à l'étranger</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu2" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">VIE À L'IUT</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Bibliothèque</a></li>
+                        <li><a href="">Santé/Handicap/Assistantes sociales</a></li>
+                        <li><a href="">Services et outils numériques</a></li>
+                        <li><a href="">Sport</a></li>
+                        <li><a href="">Culture</a></li>
+                        <li><a href="">Vie pratique</a></li>
+                        <li><a href="">Vie associative</a></li>
+                        <li><a href="">Job étudiant</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu3" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">ENTREPRISES</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Des formations à votre service</a></li>
+                        <li><a href="">Taxe d'apprentissage</a></li>
+                        <li><a href="../../entreprises/proposer-un-stage-ou-un-emploi">Proposer un stage/un emploi</a></li>    <!-- Page contenant le formulaire de contact pour les entreprises -->
+                        <li><a href="">Proposer un partenariat</a>
+                    </ul>
+                </li>
+
+                <li id="navMenu4" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">IUT</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Mot de la directrice</a></li>
+                        <li><a href="">IUT de Lens en bref</a></li>
+                        <li><a href="">Organisation</a></li>
+                        <li><a href="">Les atouts de l'IUT</a>
+                        <li><a href="">Contacts et plan d'accès</a>
+                        <li><a href="">Médias</a>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<div id="pageContent">
+
+    <!-- Bannière contenant l'image d'en-tête -->
+    <div id="pictureBanner"></div>
+
+    <!-- Section d'en-tête, contenant les liens vers les pages enfant -->
+    <section id="contentHeader" class="coloredBlock">
+
+        <h1>Proposer un stage/un emploi</h1>
+
+        <nav class="pagePath">
+            <a href="http://www.iut-lens.univ-artois.fr/">Accueil</a>
+            <span> > </span>
+            <a href="../">Entreprises</a>
+            <span> > </span>
+            <span class="pathCurrentPage">Proposer un stage/un emploi</span>
+        </nav>
+
+        <header>
+            Lorem ipsum dolor
+        </header>
+
+    </section>
+
+
+    <!-- Section de formulaire de contact -->
+    <section id="contactForm" class="coloredBlock">
+
+        <h2>Envoyer une proposition</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>Votre entreprise</legend>
+
+                <label>Nom de l'entreprise : </label><input type="text" name="companyName" required>
+
+                <fieldset>
+                    <legend>Localistation</legend>
+                    <label>Pays : </label>
+                    <select name="country" required>
+                        <option value="1" selected="selected">France</option>
+                        <option value="2">Afghanistan</option>
+                        <option value="3">Afrique Centrale</option>
+                        <option value="4">Afrique du Sud</option>
+                        <option value="5">Albanie</option>
+                        <option value="6">Algérie</option>
+                        <option value="7">Allemagne</option>
+                        <option value="8">Andorre</option>
+                        <option value="9">Angola</option>
+                        <option value="10">Anguilla</option>
+                        <option value="11">Arabie Saoudite</option>
+                        <option value="12">Argentine</option>
+                        <option value="13">Arménie</option>
+                        <option value="14">Australie</option>
+                        <option value="15">Autriche</option>
+                        <option value="16">Azerbaidjan</option>
+                        <option value="17">Bahamas</option>
+                        <option value="18">Bangladesh</option>
+                        <option value="19">Barbade</option>
+                        <option value="20">Bahrein</option>
+                        <option value="21">Belgique</option>
+                        <option value="22">Belize</option>
+                        <option value="23">Bénin</option>
+                        <option value="24">Bermudes</option>
+                        <option value="25">Biélorussie</option>
+                        <option value="26">Bolivie</option>
+                        <option value="27">Botswana</option>
+                        <option value="28">Bhoutan</option>
+                        <option value="29">Boznie Herzegovine</option>
+                        <option value="30">Brésil</option>
+                        <option value="31">Brunei </option>
+                        <option value="32">Bulgarie </option>
+                        <option value="33">Burkina Faso</option>
+                        <option value="34">Burundi</option>
+                        <option value="35">Caiman</option>
+                        <option value="36">Cambodge</option>
+                        <option value="37">Cameroun</option>
+                        <option value="38">Canada</option>
+                        <option value="39">Canaries</option>
+                        <option value="40">Cap Vert</option>
+                        <option value="41">Chili</option>
+                        <option value="42">Chine</option>
+                        <option value="43">Chypre</option>
+                        <option value="44">Colombie</option>
+                        <option value="45">Congo</option>
+                        <option value="46">Congo démocratique</option>
+                        <option value="47">Cook</option>
+                        <option value="48">Corée du Nord</option>
+                        <option value="49">Corée du Sud</option>
+                        <option value="50">Costa Rica</option>
+                        <option value="51">Côte d'Ivoire</option>
+                        <option value="52">Croatie</option>
+                        <option value="53">Cuba</option>
+                        <option value="54">Danemark</option>
+                        <option value="55">Djibouti</option>
+                        <option value="56">Dominique</option>
+                        <option value="57">Egypte</option>
+                        <option value="58">Émirats Arabes Unis</option>
+                        <option value="59">Équateur</option>
+                        <option value="60">Érythrée</option>
+                        <option value="70">Espagne</option>
+                        <option value="71">Estonie</option>
+                        <option value="72">États-Unis</option>
+                        <option value="73">Éthiopie</option>
+                        <option value="74">Falkland</option>
+                        <option value="75">Féroé</option>
+                        <option value="76">Fidji</option>
+                        <option value="77">Finlande</option>
+                        <option value="78">France</option>
+                        <option value="79">Gabon</option>
+                        <option value="80">Gambie</option>
+                        <option value="81">Géorgie</option>
+                        <option value="82">Ghana</option>
+                        <option value="83">Gibraltar</option>
+                        <option value="84">Grèce</option>
+                        <option value="85">Grenade</option>
+                        <option value="86">Groenland</option>
+                        <option value="87">Guadeloupe</option>
+                        <option value="88">Guam</option>
+                        <option value="89">Guatemala</option>
+                        <option value="90">Guernesey</option>
+                        <option value="91">Guinée</option>
+                        <option value="92">Guinée Bissau</option>
+                        <option value="93">Guinee Équatoriale</option>
+                        <option value="94">Guyana</option>
+                        <option value="95 ">Guyane Francaise</option>
+                        <option value="96">Haïti</option>
+                        <option value="97">Hawaii</option>
+                        <option value="98">Honduras</option>
+                        <option value="99">Hong Kong</option>
+                        <option value="101">Hongrie</option>
+                        <option value="102">Inde</option>
+                        <option value="103">Indonésie</option>
+                        <option value="104">Iran</option>
+                        <option value="105">Iraq</option>
+                        <option value="106">Irlande</option>
+                        <option value="107">Islande</option>
+                        <option value="108">Israël</option>
+                        <option value="109">Italie</option>
+                        <option value="110">Jamaïque</option>
+                        <option value="111">Jan Mayen</option>
+                        <option value="112">Japon</option>
+                        <option value="113">Jersey</option>
+                        <option value="114">Jordanie</option>
+                        <option value="115">Kazakhstan</option>
+                        <option value="116">Kenya</option>
+                        <option value="117">Kirghizistan</option>
+                        <option value="118">Kiribati</option>
+                        <option value="119">Koweït</option>
+                        <option value="120">Laos</option>
+                        <option value="121">Lesotho</option>
+                        <option value="122">Lettonie</option>
+                        <option value="123">Liban</option>
+                        <option value="124">Libéria</option>
+                        <option value="125">Liechtenstein</option>
+                        <option value="126">Lituanie</option>
+                        <option value="127">Luxembourg</option>
+                        <option value="128">Lybie</option>
+                        <option value="129">Macao</option>
+                        <option value="130">Macédoine</option>
+                        <option value="131">Madagascar</option>
+                        <option value="132">Madère</option>
+                        <option value="133">Malaisie</option>
+                        <option value="134">Malawi</option>
+                        <option value="135">Maldives</option>
+                        <option value="136">Mali</option>
+                        <option value="137">Malte</option>
+                        <option value="138">Man</option>
+                        <option value="139">Mariannes du Nord</option>
+                        <option value="140">Maroc</option>
+                        <option value="141">Marshall</option>
+                        <option value="142">Martinique</option>
+                        <option value="143">Maurice</option>
+                        <option value="144">Mauritanie</option>
+                        <option value="145">Mayotte</option>
+                        <option value="146">Mexique</option>
+                        <option value="147">Micronésie</option>
+                        <option value="148">Midway</option>
+                        <option value="149">Moldavie</option>
+                        <option value="150">Monaco</option>
+                        <option value="151">Mongolie</option>
+                        <option value="152">Montserrat</option>
+                        <option value="153">Mozambique</option>
+                        <option value="154">Namibie</option>
+                        <option value="155">Nauru</option>
+                        <option value="156">Népal</option>
+                        <option value="157">Nicaragua</option>
+                        <option value="158">Niger</option>
+                        <option value="159">Nigéria</option>
+                        <option value="160">Niue</option>
+                        <option value="161">Norfolk</option>
+                        <option value="162">Norvège</option>
+                        <option value="163">Nouvelle-Calédonie</option>
+                        <option value="164">Nouvelle-Zéland</option>
+                        <option value="165">Oman</option>
+                        <option value="166">Ouganda</option>
+                        <option value="167">Ouzbekistan</option>
+                        <option value="168">Pakistan</option>
+                        <option value="169">Palau</option>
+                        <option value="170">Palestine</option>
+                        <option value="171">Panama</option>
+                        <option value="172">Papouasie-Nouvelle-Guinée</option>
+                        <option value="173">Paraguay</option>
+                        <option value="174">Pays-Bas</option>
+                        <option value="175">Pérou</option>
+                        <option value="176">Philippines</option>
+                        <option value="177">Pologne</option>
+                        <option value="178">Polynésie</option>
+                        <option value="179">Porto Rico</option>
+                        <option value="180">Portugal</option>
+                        <option value="181">Qatar</option>
+                        <option value="182">République Dominicaine</option>
+                        <option value="183">République Tchèque </option>
+                        <option value="184">Réunion</option>
+                        <option value="185">Roumanie</option>
+                        <option value="186">Royaume-Uni</option>
+                        <option value="187">Russie</option>
+                        <option value="188">Rwanda</option>
+                        <option value="189">Sahara Occidental</option>
+                        <option value="190">Sainte Lucie</option>
+                        <option value="191">Saint Marin</option>
+                        <option value="192">Salomon</option>
+                        <option value="193">Salvador</option>
+                        <option value="194">Samoa Occidentales</option>
+                        <option value="195">Samoa Américaine</option>
+                        <option value="196">Sao Tome et Principe</option>
+                        <option value="197">Sénégal</option>
+                        <option value="198">Seychelles</option>
+                        <option value="199">Sierra Leone</option>
+                        <option value="200">Singapour</option>
+                        <option value="201">Slovaquie</option>
+                        <option value="202">Slovénie</option>
+                        <option value="203">Somalie</option>
+                        <option value="204">Soudan</option>
+                        <option value="205">Sri_Lanka</option>
+                        <option value="206">Suède</option>
+                        <option value="207">Suisse</option>
+                        <option value="208">Surinam</option>
+                        <option value="209">Swaziland</option>
+                        <option value="210">Syrie</option>
+                        <option value="211">Tadjikistan</option>
+                        <option value="212">Taïwan</option>
+                        <option value="213">Tonga</option>
+                        <option value="214">Tanzanie</option>
+                        <option value="215">Tchad</option>
+                        <option value="216">Thaïlande</option>
+                        <option value="217">Tibet</option>
+                        <option value="218">Timor Oriental</option>
+                        <option value="219">Togo</option>
+                        <option value="220">Trinité et Tobago</option>
+                        <option value="221">Tristan de Cuncha</option>
+                        <option value="222">Tunisie</option>
+                        <option value="223">Turmenistan</option>
+                        <option value="224">Turquie</option>
+                        <option value="225">Ukraine</option>
+                        <option value="226">Uruguay</option>
+                        <option value="227">Vanuatu</option>
+                        <option value="228">Vatican</option>
+                        <option value="229">Venezuela</option>
+                        <option value="230">Vierges Américaines</option>
+                        <option value="231">Vierges Britanniques</option>
+                        <option value="232">Vietnam</option>
+                        <option value="233">Wake</option>
+                        <option value="234">Wallis et Futuna</option>
+                        <option value="235">Yémen</option>
+                        <option value="236">Yougoslavie</option>
+                        <option value="237">Zambie</option>
+                        <option value="238">Zimbabwe</option>
+                    </select>
+
+                    <label>Ville : </label><input type="text" name="city" required>
+                    <label>Code Postal : </label><input type="text" name="postcode" required>
+                    <label>Adresse : </label><input type="text" name="address" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label>Numéro de téléphone : </label><input type="text" name="phone">
+                    <label>Adresse mail : </label><input type="email" name="mail">
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>À propos de vous</legend>
+                <label>Nom : </label><input type="text" name="lastName" required>
+                <label>Prénom : </label><input type="text" name="firstName" required>
+
+                <fieldset>
+                    <legend>Civilité</legend>
+                    <input type="radio" id="f" name="civility"><label>Femme</label>
+                    <input type="radio" id="m" name="civility"><label>Homme</label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <legend>Domaines de formation concernés par votre proposition</legend>
+                <input type="checkbox" id="info" value="info" name="courses">
+                <label for="info">Informatique</label>
+
+                <input type="checkbox" id="mediasNum" value="mediasNum" name="courses">
+                <label for="mediasNum">Médias numériques</label>
+
+                <input type="checkbox" id="gestion" value="gestion" name="courses"><label for="gestion">Gestion</label>
+                <input type="checkbox" id="commerce" value="commerce" name="courses"><label for="commerce">Commerce</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre message</legend>
+                <input type="text" placeholder="Objet de votre message">
+                <textarea placeholder="Votre message"></textarea>
+                <label>Pièce jointe : </label><input type="file">
+            </fieldset>
+
+            <input type="submit">
+
+        </form>
+
+    </section>
+
+</div>
+
+
+<!-- Pied de page -->
+<footer id="pageFooter">
+
+    <nav>
+
+        <div id="footerLinksContainer">
+            <div id="footerLinks">
+                <a href="">Contact</a>
+                <a href="">Mentions légales</a>
+            </div>
+
+            <div id="socialNetworks">
+                <a href=""><img alt="Facebook" src="../../images/icons/facebook-button.svg"></a>
+                <a href=""><img alt="Twitter" src="../../images/icons/twitter-button.svg"></a>
+                <a href=""><img alt="Linkedin" src="../../images/icons/linkedin-button.svg"></a>
+                <a href=""><img alt="Youtube" src="../../images/icons/youtube-button.svg"></a>
+            </div>
+        </div>
+
+        <div id="copyrightBanner">
+            <p>© 2020 Florian Vaneste – Thomas Cottrez – Tristan Leroy. Tous droits réservés.</p>
+        </div>
+
+    </nav>
+
+    <a id="logoUniv" href=""><img alt="Logo de l'université d'Artois" src="../../images/icons/logo-universite-d-artois.svg"></a>
+
+</footer>
+
+
+<script src="../../scripts/colorMode.js"></script>
+<script src="../../scripts/general.js"></script>
+<script src="../../scripts/navMenu.js"></script>
+<script src="../../scripts/general.js"></script>
+
+
+</body>
+
+</html>
