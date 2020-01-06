@@ -190,7 +190,7 @@
     display: none;
     flex-direction: column;
     width: inherit;
-    background-color: var(--bgColor);
+    background-color: rgba(var(--bgColor), .7);
 }
 
 .formationResult > h3 {
@@ -261,7 +261,7 @@
     justify-content: center;
     align-items: center;
     color: var(--fontColor1);
-    background-color: rgb(var(--fourthColor));
+    background-color: rgba(var(--fourthColor), .9);
     margin: 7px;
 }
 
@@ -392,6 +392,3 @@ address > div > span {
 address a {
     color: var(--fontColor1);
 }
-
-/* todo : améiorer contrastes txte address */
-/* todo : mettre fourth color en bg des sous-menus mobile */
