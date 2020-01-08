@@ -1,5 +1,5 @@
 @import "../../styles/theme.css";
 
 #contentHeader > h1 {
-    background-color: var(--darkGreen);
+    background-color: #9aab00;
 }

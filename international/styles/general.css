@@ -167,19 +167,19 @@
 }
 
 #formationSelectorInformatique.selectedFormationSelector, #formationSelectorInformatique:hover {
-    background-color: var(--darkBlue);
+    background-color: #208d81;
 }
 
 #formationSelectorMediasNum.selectedFormationSelector, #formationSelectorMediasNum:hover {
-    background-color: var(--darkPink);
+    background-color: #b60050;
 }
 
 #formationSelectorGestion.selectedFormationSelector, #formationSelectorGestion:hover {
-    background-color: var(--darkOrange);
+    background-color: #b65d00;
 }
 
 #formationSelectorCommerce.selectedFormationSelector, #formationSelectorCommerce:hover {
-    background-color: var(--darkGreen);;
+    background-color: #9aab00;
 }
 
 #formationsResults {
@@ -219,19 +219,19 @@
 }
 
 #formationsInformatique li:before {
-    color: var(--darkBlue);
+    color: #208d81;
 }
 
 #formationsMediasNum li:before {
-    color: var(--darkPink);
+    color: #b60050;
 }
 
 #formationsGestion li:before {
-    color: var(--darkOrange);
+    color: #b65d00;
 }
 
 #formationsCommerce li:before {
-    color: var(--darkGreen);
+    color: #9aab00;
 }
 
 .selectedFormation {

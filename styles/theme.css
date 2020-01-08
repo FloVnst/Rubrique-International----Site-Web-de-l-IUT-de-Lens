@@ -11,14 +11,6 @@
     --fifthColor: #414141;
     --fontColor2: #eeeeee;
     --fontColor3: #999;
-    --lightBlue: #02b7a3;
-    --lightPink: #ee287c;
-    --lightOrange: #ee8b29;
-    --lightGreen: #cedd45;
-    --darkBlue: #208d81;
-    --darkPink: #b60050;
-    --darkOrange: #b65d00;
-    --darkGreen: #9aab00;
 }
 
 [data-theme="light"] {
