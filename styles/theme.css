@@ -1,13 +1,13 @@
 :root {
     --mainColor: black;
-    --bgColor: 26, 26, 26;
-    --lighterSectionShade: #353535;
+    --bgColor: #1a1a1a;
+    --lighterSectionShade: #333333;
     --strongerSectionShade:#2c2c2c;
     --secondaryColor: #4d4d4d;
     --thirdColor: #5d5d5d;
     --fontColor1: #fff;
     --externalLinkIcon: url("../images/icons/external-link-light.svg");
-    --fourthColor: 40, 40, 40;
+    --fourthColor: 34, 34, 34;
     --fifthColor: #414141;
     --fontColor2: #eeeeee;
     --fontColor3: #999;
@@ -15,14 +15,14 @@
 
 [data-theme="light"] {
     --mainColor: #3f4045;
-    --bgColor: 232, 241, 242;
-    --lighterSectionShade: #b5b5b5;
-    --strongerSectionShade: #9b9b9b;
+    --bgColor: #e8f1f2;
+    --lighterSectionShade: #c8c8c9;
+    --strongerSectionShade: #b5b5b5;
     --secondaryColor: #616266;
     --thirdColor: #6f7073;
     --fontColor1: #3e3e3e;
     --externalLinkIcon: url("../images/icons/external-link-dark.svg");
-    --fourthColor: 200, 200, 201;
+    --fourthColor: 184, 184, 184;
     --fontColor2: #3f4045;
     --fontColor3: #4b4b4b;
     --fifthColor: #555556;
