@@ -1,3 +1,17 @@
 #pictureBanner {
     background-image: url("../images/illustrations/vue-globale-iut.jpg");
 }
+
+li {
+    color: var(--fontColor2);
+}
+
+section > ul {
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 0;
+}
+
+section > ul > li {
+    margin: 2px 0;
+}

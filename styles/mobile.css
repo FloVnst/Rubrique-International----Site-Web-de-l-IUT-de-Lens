@@ -84,6 +84,7 @@
 #navMenus > li {
     width: 80vw;
     margin: 10px;
+    list-style-type: none;
 }
 
 #navMenus > li > a {

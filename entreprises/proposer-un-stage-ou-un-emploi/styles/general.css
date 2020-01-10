@@ -1,3 +1,7 @@
+#pictureBanner {
+    background-image: url("../images/illustrations/central-business-center.jpg");
+}
+
 form {
     display: flex;
     flex-direction: column;

@@ -16,9 +16,14 @@ body {
 
 a {
     display: inline;
+    color: var(--fontColor2);
 }
 
-a[target="_blank"]:after {
+a:link {
+    color: var(--fontColor2);
+}
+
+a[target="_blank"]:not(.externalIconHidden):after {
     content: var(--externalLinkIcon);
     display: inline-flex;
     vertical-align: middle;
@@ -323,7 +328,7 @@ a[target="_blank"]:after {
 
 .pagePath {
     align-self: flex-start;
-    margin: 15px 2.5% 30px 2.5%;
+    margin: 15px 2.5% 30px 10%;
     color: grey;
 }
 
@@ -333,4 +338,96 @@ a[target="_blank"]:after {
 
 .pathCurrentPage {
     color: var(--fontColor3) !important;
+}
+
+/* blocs d'adresse */
+#addressContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#addressContainer > address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    color: var(--fontColor1);
+    font-size: 15px;
+    margin: 15px 15px;
+    background-color: rgb(var(--fourthColor));
+    padding: 15px;
+}
+
+address > .addressTitle {
+    font-size: 18px;
+    margin: 0 7px;
+}
+
+address > .addressContent {
+    color: var(--fontColor3);
+    margin: 2px 7px 15px 7px;
+}
+
+address > div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+address > div > span {
+    margin: 7px 15px;
+}
+
+address a {
+    color: var(--fontColor1);
+}
+
+.subsection, .chapo {
+    width: 80%;
+    text-align: justify;
+    color: var(--fontColor1);
+}
+
+section {
+    display: flex;
+}
+
+.sommaire {
+    border-collapse: collapse;
+    align-self: flex-start;
+    margin: 20px 0 20px 10%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sommaire * {
+    color: white !important;
+}
+
+.sommaireTop {
+    background-color: var(--fifthColor);
+    color: var(--fontColor1);
+}
+
+.sommaireBottom {
+    background-color: var(--secondaryColor);
+    font-size: 14px;
+}
+
+.sommaireContent {
+    margin: 5px 7px;
+    padding: 2px 40px 2px 40px;
+    list-style-type: square;
+}
+
+.sommaireContent > li {
+    margin: 3px 0;
+}
+
+li {
+    list-style-type: square;
 }
