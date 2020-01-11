@@ -134,6 +134,9 @@
 
 
 @media screen and (max-width: 680px) {
+    #luminosityButton, #languageButton {
+        background-position: center;
+    }
     #controls {
         width: 70px;
     }
