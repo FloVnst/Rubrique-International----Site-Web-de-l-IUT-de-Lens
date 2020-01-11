@@ -32,7 +32,7 @@ a[target="_blank"]:not(.externalIconHidden):after {
     margin-left: 5px;
 }
 
-cite {
+.cite {
     display: inline-block;
     margin: 7px 10% 7px 10%;
     padding-left: 7px;
@@ -40,7 +40,7 @@ cite {
     color: var(--fontColor2);
 }
 
-cite > .skillsList {
+.cite > .skillsList {
     padding-left: 7px;
     margin: 0;
 }
@@ -511,15 +511,16 @@ section > h3 {
     right: 7px;
 }
 
-li {
+section li {
     list-style-type: square;
+    margin: 2px 0;
 }
 
 .faq > details {
     width: 80%;
     background-color: var(--bgColor);
     margin: 3px 0;
-    color: var(--fontColor1);
+    color: white;
 }
 
 .faq .question {
