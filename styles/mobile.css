@@ -133,8 +133,16 @@
 }
 
 
+@media screen and (max-width: 680px) {
+    #controls {
+        width: 70px;
+    }
+    #controls span {
+        display: none;
+    }
+}
 
-/* Suppression d'éléments si la largeur d'écran est trop petite */
+/* Suppression d'éléments si la largeur d'écran est trop petite (montres connectées...) */
 
 @media screen and (max-width: 340px) {
     #studentsLinks {

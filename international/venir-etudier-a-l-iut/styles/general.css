@@ -8,10 +8,10 @@ li {
 
 section > ul {
     align-self: flex-start;
-    margin-left: 10%;
-    margin-top: 0;
+    margin: 0 10%;
 }
 
 section > ul > li {
     margin: 2px 0;
+    text-align: justify;
 }

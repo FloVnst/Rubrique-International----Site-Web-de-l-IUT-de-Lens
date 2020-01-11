@@ -1,3 +1,7 @@
+:root {
+    --categoryColor: #9aab00;
+}
+
 #pictureBanner {
     background-image: url("../images/illustrations/central-business-center.jpg");
 }

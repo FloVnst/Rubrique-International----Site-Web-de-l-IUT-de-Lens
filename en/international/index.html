@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-theme="dark">
     
     <head>
         <meta charset="UTF-8">
@@ -40,10 +40,15 @@
 
                     <!-- Boutons Luminosité et Langue -->
                     <div id="controls">
-                        <a href="../../international/">
-                            <img id="languageButton" class="controlIcon" alt="French version of the website" src="../images/icons/france-flag.svg">
+                        <a href="../../international" class="controlIcon">
+                            <div id="languageButton">
+                                <span lang="fr">Français</span>
+                            </div>
                         </a>
-                        <button id="luminosityButton" class="controlIcon" onclick="changeTheme()"></button>
+                        <button id="luminosityButton" class="controlIcon" onclick="changeTheme()">
+                            <span class="lightButton">Thème clair</span>
+                            <span class="darkButton">Thème sombre</span>
+                        </button>
                     </div>
 
                     <!-- Menu déroulant avec des liens pour les étudiants -->

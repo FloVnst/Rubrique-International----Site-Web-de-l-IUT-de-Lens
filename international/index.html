@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -39,10 +39,15 @@
 
             <!-- Boutons Luminosité et Langue -->
             <div id="controls">
-                <a href="../en/international/">
-                    <img id="languageButton" class="controlIcon" alt="Traduire le site en anglais" src="../images/icons/uk-flag.svg">
+                <a href="../en/international" class="controlIcon">
+                    <div id="languageButton">
+                        <span lang="en">English</span>
+                    </div>
                 </a>
-                <button id="luminosityButton" class="controlIcon" onclick="changeTheme()"></button>
+                <button id="luminosityButton" class="controlIcon" onclick="changeTheme()">
+                    <span class="lightButton">Thème clair</span>
+                    <span class="darkButton">Thème sombre</span>
+                </button>
             </div>
 
             <!-- Menu déroulant avec des liens pour les étudiants -->
@@ -345,12 +350,12 @@
                 <p class="addressTitle">IUT de Lens</p>
                 <p class="addressContent">Service Relations Internationales</p>
                 <div>
-                            <span>
-                                <a href="tel:+33321733232">+33 (0)3 21 73 32 32</a>
-                            </span>
                     <span>
-                                <a href="mailto:sri@univ-artois.fr">ri@iut-lens.univ-artois.fr</a>
-                            </span>
+                        <a href="tel:+33321733232">+33 (0)3 21 73 32 32</a>
+                    </span>
+                    <span>
+                        <a href="mailto:sri@univ-artois.fr">ri@iut-lens.univ-artois.fr</a>
+                    </span>
                 </div>
             </address>
 
@@ -394,7 +399,7 @@
 <script src="../scripts/colorMode.js"></script>
 <script src="../scripts/general.js"></script>
 <script src="../scripts/navMenu.js"></script>
-<script src="scripts/general.js"></script>
+<script src="scripts/menuFormations.js"></script>
 
 </body>
 

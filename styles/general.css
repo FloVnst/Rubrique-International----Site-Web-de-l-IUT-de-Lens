@@ -32,6 +32,19 @@ a[target="_blank"]:not(.externalIconHidden):after {
     margin-left: 5px;
 }
 
+cite {
+    display: inline-block;
+    margin: 7px 10% 7px 10%;
+    padding-left: 7px;
+    border-left: 4px solid var(--categoryColor);
+    color: var(--fontColor2);
+}
+
+cite > .skillsList {
+    padding-left: 7px;
+    margin: 0;
+}
+
 /* --- En-tête --- */
 
 #pageHeader {
@@ -78,30 +91,82 @@ a[target="_blank"]:not(.externalIconHidden):after {
 }
 
 #controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
+    width: 30vw;
 }
 
-#controls, #controls > a {
+#controls > a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#controls > a {
+    text-decoration: none;
+}
+
 .controlIcon {
-    margin: 5px;
+    margin: 5px 0;
 }
 
 #luminosityButton {
-    height: 25px;
-    width: 25px;
     background-image: url("../images/icons/light-mode.svg");
-    background-size: contain;
-    background-position: center;
+}
+
+#luminosityButton, #languageButton {
+    height: 25px;
     background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+#languageButton {
+    display: flex;
+    align-items: center;
+    background-size: auto 16px;
+    height: 25px;
+    min-width: 25px;
+}
+
+#luminosityButton {
+    background-size: auto 25px;
+    min-width: 27px;
 }
 
 [data-theme=light] #luminosityButton {
     background-image: url("../images/icons/dark-mode.svg");
+}
+
+#luminosityButton > span, #languageButton > span {
+    color: white;
+    margin-left: 17px;
+    font-size: 13px; /*appliquer ce style aussi au texte du bouton anglais + augmenter le margin entre les 2 boutons (anglais & darkmode*/
+}
+
+#luminosityButton > span {
+    margin-left: 18px;
+}
+
+[data-theme=light] #luminosityButton > span {
+    margin-left: 12px;
+}
+
+#languageButton > span {
+    margin-left: 28px;
+}
+
+#languageButton {
+    background-image: url("../images/icons/uk-flag.svg");
+}
+
+[data-theme=light] .lightButton, [data-theme=dark] .darkButton {
+    display: none;
+}
+
+[data-theme=light] .darkButton, [data-theme=dark] .lightButton {
+    display: inline;
 }
 
 #studentsLinks {
@@ -386,9 +451,9 @@ address a {
     color: var(--fontColor1);
 }
 
-.subsection, .chapo {
+.subsection, .chapo, .moreInformations {
     width: 80%;
-    text-align: justify;
+    text-align: left;
     color: var(--fontColor1);
 }
 
@@ -396,10 +461,16 @@ section {
     display: flex;
 }
 
+section > h3 {
+    color: var(--fontColor1);
+    font-size: 20px;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
 .sommaire {
     border-collapse: collapse;
-    align-self: flex-start;
-    margin: 20px 0 20px 10%;
+    margin: 20px 10%;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -428,6 +499,31 @@ section {
     margin: 3px 0;
 }
 
+.skillsList > li {
+    list-style-type: none;
+    text-align: left;
+    margin: 3px 0;
+}
+
+.skillsList > li:before {
+    content: '✓';
+    position: relative;
+    right: 7px;
+}
+
 li {
     list-style-type: square;
+}
+
+.faq > details {
+    width: 80%;
+    background-color: var(--bgColor);
+    margin: 3px 0;
+    color: var(--fontColor1);
+}
+
+.faq .question {
+    background-color: var(--secondaryColor);
+    padding: 7px;
+    cursor: pointer;
 }

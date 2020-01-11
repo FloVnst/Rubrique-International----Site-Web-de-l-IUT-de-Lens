@@ -1,3 +1,7 @@
+:root {
+    --categoryColor: #ee287c;
+}
+
 a.pinkButton {
     color: white;
     background-color: #ee287c;
