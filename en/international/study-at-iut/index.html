@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en" data-theme="dark">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study at IUT  - IUT de Lens</title>
+
+    <!-- Styles appliqués à l'ensemble du site -->
+    <link rel="stylesheet" type="text/css" href="../../../styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../../styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../../styles/classic.css">
+
+    <!-- Styles appliqués à cette page -->
+    <link rel="stylesheet" type="text/css" href="../../../international/venir-etudier-a-l-iut/styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../../international/venir-etudier-a-l-iut/styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../../international/venir-etudier-a-l-iut/styles/classic.css">
+
+    <!-- Styles appliqués aux pages en anglais -->
+    <link rel="stylesheet" type="text/css" href="../../styles/general.css">
+
+    <!-- Styles appliqués à cette page et/ou aux pages des rubriques enfant -->
+    <link rel="stylesheet" type="text/css" href="../../../international/styles/internationalAndChildrenGeneral.css">
+
+</head>
+    
+
+<body>
+
+<!-- Barre d'en-tête -->
+<header id="pageHeader">
+
+    <a id="logoIUT" href="http://www.iut-lens.univ-artois.fr">
+		<img alt="Home page" src="../../../images/icons/logo-iut.svg">
+    </a>
+
+    <!-- Partie droite du header -->
+    <div id="rightSideHeader">
+
+        <!-- Menu commun à la version classique et la version mobile -->
+        <div id="commonMenu">
+
+            <!-- Boutons Luminosité et Langue -->
+            <div id="controls">
+                <a href="../../../international/venir-etudier-a-l-iut" class="controlIcon">
+                    <div id="languageButton">
+                        <span lang="fr">Français</span>
+                   </div>
+                </a>
+                <button id="luminosityButton" class="controlIcon" onclick="changeTheme()">
+                    <span class="lightButton">Light Mode</span>
+                    <span class="darkButton">Dark Mode</span>
+                </button>
+            </div>
+
+            <!-- Menu déroulant avec des liens pour les étudiants -->
+            <div id="studentsLinks">
+                <p>Students ▼</p>
+                <ul>
+                    <li><a href="">Digital work space</a></li>
+                    <li><a href="">Schedule</a></li>
+                    <li><a href="">Libraries</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="">Intranet</a></li>
+                </ul>
+            </div>
+
+            <!-- Bouton "hamburger" pour afficher le menu de navigation mobile -->
+            <div id="hamburgerButton">
+                <div></div>
+            </div>
+
+        </div>
+
+
+        <!-- Menu de navigation (responsive) -->
+        <nav id="navMenusContainer">
+            <ul id="navMenus">
+                <li id="navMenu0" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">ACADEMICS</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav navMenu">
+                        <li><a href="">Training offer</a></li>
+                        <li><a href="">Continuing education</a></li>
+                        <li><a href="">Alternate training</a></li>
+                        <li><a href="">How to apply for the IUT ?</a></li>
+                        <li><a href="">Registering at the Lens Institute of Technology</a></li>
+                        <li><a href="">Certifications : CLES/C2i/Voltaire Project</a></li>
+                        <li><a href="">Entrepreneurship</a></li>
+                        <li><a href="">Support for students</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu1" class="navMenu">
+                    <div class="navTitle">
+                        <a href="../../../international">INTERNATIONAL</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Study at IUT</a></li>
+                        <li><a href="">Going abroad</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu2" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">CAMPUS LIFE</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Library</a></li>
+                        <li><a href="">Health/Disability/Social workers</a></li>
+                        <li><a href="">Digital services and tools</a></li>
+                        <li><a href="">Sport</a></li>
+                        <li><a href="">Culture</a></li>
+                        <li><a href="">Pratical life</a></li>
+                        <li><a href="">Associations</a></li>
+                        <li><a href="">Student job</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu3" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">COMPANIES</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Trainings at your service</a></li>
+                        <li><a href="">Apprenticeship tax</a></li>
+                        <li><a href="">Offer an internship or a job</a></li>
+                        <li><a href="">Propose a partnership</a>
+                    </ul>
+                </li>
+
+                <li id="navMenu4" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">ABOUT IUT</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Director's message</a></li>
+                        <li><a href="">Lens Institute of Technology in brief</a></li>
+                        <li><a href="">Organization</a></li>
+                        <li><a href="">Assets of Lens Institute of Technology</a>
+                        <li><a href="">Contact and access plan</a>
+                        <li><a href="">Media</a>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<div id="pageContent">
+
+    <!-- Bannière contenant l'image d'en-tête -->
+    <div id="pictureBanner"></div>
+
+    <!-- Section d'en-tête, contenant les liens vers les pages enfant -->
+    <section id="contentHeader" class="coloredBlock">
+
+        <h1>Study at IUT</h1>
+
+        <nav class="pagePath">
+            <a href="http://www.iut-lens.univ-artois.fr/">Home</a>
+            <span> > </span>
+            <a href="../">International</a>
+            <span> > </span>
+            <span class="pathCurrentPage">Study at IUT</span>
+        </nav>
+
+        <p class="chapo">
+            As part of its integration into the Artois University, the Lens Institute of Technology allows foreign students to integrate training. It is possible to register either individually, or via an agreement or an exchange program signed with the student's home institution.
+        </p>
+
+
+        <table class="sommaire">
+            <tr>
+                <th class="sommaireTop">Study at IUT</th>
+            </tr>
+            <tr class="sommaireBottom">
+                <td>
+                    <ul class="sommaireContent">
+                        <li><a href="#IUTdeLens">Lens Institute of Technology</a></li>
+                        <li><a href="#formationsEtCertifications">Courses and Certifications</a></li>
+                        <li><a href="#conditionsAdmission">Conditions of admission</a></li>
+                        <li><a href="#inscriptionEtDemarches">Registration and Procedures</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <!-- Section IUT -->
+    <section id="sectionIUT" class="coloredBlock">
+        <h2 id="IUTdeLens">Lens Institute of Technology</h2>
+        <p class="subsection">
+            For more than 30 years, Lens Institute of Technology offers quality training courses meeting the needs of companies.
+            Located on 4,5 hectares near the downtown, the Bollaert stadium and the <a href="https://www.louvrelens.fr" target="_blank" class="externalIconHidden">Louvre-Lens</a>, it welcomes <span class="noBreak">1 200</span> students each year in 5 fields: Computer science, Digital Media, Management and Marketing.
+        </p>
+
+        <p class="subsection">
+            Lens Institute of Technology is attached to Artois University, which provides a number of advantages to international students such as:
+        </p>
+        <ul>
+            <li>Partnerships with establishments abroad</li>
+            <li>Free access to all the libraries in the network of Artois University</li>
+            <li>Free practice of a wide choice of sports, supervised by professionals</li>
+        </ul>
+
+
+    </section>
+
+
+    <!-- Section Formations -->
+    <section id="sectionFormations" class="coloredBlock">
+        <h2 id="formationsEtCertifications">Courses and Certifications</h2>
+
+        <h3>Formations</h3>
+
+        <p class="subsection">The Lens Institute of Technology offers various training courses in line with the new needs of companies.</p>
+
+        <div id="formationsContainer">
+            <div id="formationsMenu">
+                <div id="formationSelectorInformatique" class="formationSelector selectedFormationSelector">
+                    <img alt="" src="../../../international/images/icons/informatique.svg">
+                    <p>Computer science</p>
+                </div>
+
+                <div id="formationSelectorMediasNum" class="formationSelector">
+                    <img alt="" src="../../../international/images/icons/mediasNum.svg">
+                    <p>Digital Media</p>
+                </div>
+
+                <div id="formationSelectorGestion" class="formationSelector">
+                    <img alt="" src="../../../international/images/icons/management.svg">
+                    <p>Management</p>
+                </div>
+
+                <div id="formationSelectorCommerce" class="formationSelector">
+                    <img alt="" src="../../../international/images/icons/commerce.svg">
+                    <p>Marketing</p>
+                </div>
+            </div>
+
+            <!-- Résultats -->
+            <div id="formationsResults">
+                <div id="formationsInformatique" class="formationResult selectedFormation">
+                    <h3>Computer science</h3>
+                    <ul>
+                        <li><a target="_blank" href="">Two years degree in Computing and Information Technology</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate professional degree : Designing, Developing and Testing Software</a></li>
+                    </ul>
+                </div>
+
+                <div id="formationsMediasNum" class="formationResult">
+                    <h3>Digital Media</h3>
+                    <ul>
+                        <li><a target="_blank" href="">Two years degree in Multimedia and Internet Careers</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate professional degree : Designing, Editing and Building Websites</a></li>
+                    </ul>
+                </div>
+
+                <div id="formationsGestion" class="formationResult">
+                    <h3>Management</h3>
+                    <ul>
+                        <li><a target="_blank" href="">Two years degree in Company and Administration Management</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate professional degree : Assistant in Human Resources Management</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate professional degree : Managing Client Portfolios in Accounting Firms</a></li>
+                    </ul>
+
+                </div>
+
+                <div id="formationsCommerce" class="formationResult">
+                    <h3>Marketing</h3>
+                    <ul>
+                        <li><a target="_blank" href="">Two years degree in Marketing Techniques</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate degree in Commerce and Distribution</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate degree in e-Commerce and Digital Marketing</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate degree in Marketing Products and Services</a></li>
+                        <li><a target="_blank" href="">Three years undergraduate degree in Marketing Tourism Products</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="" target="_blank">
+                See the other courses of the Artois University
+            </a>
+
+        </div>
+
+        <h3>Certifications</h3>
+        <p class="subsection">
+            In addition to the training offered, international students can also validate their French language level with:
+        </p>
+        <ul>
+            <li>
+                <h4>DELF, diploma of studies in French language:</h4>
+                <p>Validation of levels A1, A2, B1 and B2</p>
+            </li>
+            <li>
+                <h4>DALF, in-depth diploma in French:</h4>
+                <p>Validation of levels C1 and C2</p>
+            </li>
+        </ul>
+        <p class="subsection">The language levels are given according to the European standard CEFRL.</p>
+        <div class="moreInformations">
+            <span>For more information :</span>
+            <ul>
+                <li><a href="https://www.france-langue.fr/niveaux-de-francais/" target="_blank">CEFRL levels (Common European Framework of Reference for Languages)</a></li>
+                <li><a href="http://www.cue-lillenorddefrance.fr/?q=international/francais-langue-etrangere/DelfDalf" target="_blank">Information on language certifications</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section id="sectionAssetsIUT" class="coloredBlock">
+        <h2 id="conditionsAdmission">Conditions of admission</h2>
+        <p class="subsection">All of the courses at the Lens Institute of Technology are taught in French. To ensure everyone's success, students wishing to come and study in our establishment must have a good understanding of French. This is why level B2 is required.</p>
+        <p class="subsection">
+            The CEFRL defines level B2 as follows:<br/>
+        </p>
+        <div class="cite">
+            <ul class="skillsList">
+                <li>Can understand the essential content of concrete or abstract subjects in a complex text, including a technical discussion in his specialty.</li>
+                <li>Can communicate with a degree of spontaneity and fluency such as a conversation with a native speaker with no tension for either.</li>
+                <li>Can express himself in a clear and detailed manner on a wide range of subjects, express an opinion on a topical subject and explain the advantages and disadvantages of different possibilities.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="sectionInscription" class="coloredBlock">
+        <h2 id="inscriptionEtDemarches">Registration and Procedures</h2>
+        <h3>Individually</h3>
+        <p class="subsection">If you wish to study in France on an individual basis, the administrative procedures may vary depending on your country of origin. These are explained on the site <a href="https://www.campusfrance.org/fr/candidature-enseignement-superieur-france" target="_blank">Campus France</a>.</p>
+        <h3>As part of a partnership with your university</h3>
+        <p class="subsection">If your university is a partner of the Lens Institute of Technology, it must first select you to be able to take part in an exchange program. Ask the International Relations department of your establishment for more information.<p>
+        <div class="moreInformations">
+            <span>For more information :</span>
+            <ul>
+                <li><a href="http://www.univ-artois.fr/international/venir-etudier-luniversite-dartois/en-programme-dechange/avant-votre-depart" target="_blank">Procedures before your departure</a></li>
+                <li><a href="http://www.univ-artois.fr/international/venir-etudier-luniversite-dartois/en-programme-dechange/votre-arrivee" target="_blank">Procedures upon your arrival</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="faq coloredBlock">
+        <h2 id="FAQ">FAQ</h2>
+        <details>
+            <summary class="question">Can I stay and work in France after I graduate ?</summary>
+            <p class="answer">
+                If you are a national of the European Economic Area, working in France will not pose any particular problem. On the other hand, if you come from another country, you will need to request a change of status, generally from student to employee. For this, it is imperative to have found a job and to obtain a promise of employment from the employer. After that, you must submit your request to the prefecture, preferably several months before the expiration of your residence permit.<br/>
+                For more information on the steps to take, you can go to <a href="https://www.expat.com/fr/guide/europe/france/5016-etudiants-etrangers--les-demarches-pour-rester-travailler-en-france-a-l-issue-des-etudes.html" target="_blank">this site</a>.
+            </p>
+        </details>
+        <details>
+            <summary class="question">Can I work in France while I study ?</summary>
+            <p class="answer">If you are a national of the European Economic Area, you can work up to 964 hours per year, or 60% of a full-time job. You do not need a work permit or a residence permit for this. If you are non-European, other rules apply. You can find the rules corresponding to your situation on <a href="https://www.service-public.fr/particuliers/vosdroits/F2713" target="_blank">this site</a>.</p>
+        </details>
+    </section>
+</div>
+
+
+<!-- Pied de page -->
+<footer id="pageFooter">
+
+    <nav>
+
+        <div id="footerLinksContainer">
+            <div id="footerLinks">
+                <a href="">Contact</a>
+                <a href="">Legal notice</a>
+            </div>
+
+            <div id="socialNetworks">
+                <a href=""><img alt="Facebook" src="../../../images/icons/facebook-button.svg"></a>
+                <a href=""><img alt="Twitter" src="../../../images/icons/twitter-button.svg"></a>
+                <a href=""><img alt="Linkedin" src="../../../images/icons/linkedin-button.svg"></a>
+                <a href=""><img alt="Youtube" src="../../../images/icons/youtube-button.svg"></a>
+            </div>
+        </div>
+
+        <div id="copyrightBanner">
+            <p>© 2020 Florian Vaneste – Thomas Cottrez – Tristan Leroy. All rights reserved.</p>
+        </div>
+
+    </nav>
+
+    <a id="logoUniv" href=""><img alt="Logo de l'université d'Artois" src="../../images/icons/logo-universite-d-artois.svg"></a>
+
+</footer>
+
+
+<script src="../../../scripts/colorMode.js"></script>
+<script src="../../../scripts/general.js"></script>
+<script src="../../../scripts/navMenu.js"></script>
+<script src="../../../international/scripts/menuFormations.js"></script>
+<script src="../../../scripts/general.js"></script>
+
+</body>
+
+</html>

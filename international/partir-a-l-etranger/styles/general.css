@@ -1,3 +1,63 @@
 #pictureBanner {
     background-image: url("../images/illustrations/ireland.jpg");
 }
+
+.formationResult {
+    display: flex;
+    flex-direction: column;
+}
+
+.formationResult > div {
+    display: flex;
+}
+
+.formationResult > div > .universityPhoto {
+    width: 30%;
+    height: inherit;
+    background-color: #ee287c;
+}
+
+.formationResult > div > .universityContent {
+    color: var(--fontColor2);
+    width: 70%;
+    padding: 7px;
+}
+
+.titleRow {
+    display: flex;
+    align-items: center;
+}
+
+.titleRow h4 {
+    color: var(--fontColor1);
+    font-size: 18px;
+}
+
+
+#dundalkInfo .universityPhoto, #dundalkMMI .universityPhoto, #dundalkTC .universityPhoto {
+    background-image: url("../images/illustrations/duntalk.jpg");
+}
+
+#roumanieInfo .universityPhoto, #roumanieMMI .universityPhoto {
+    background-image: url("../images/illustrations/roumanie.jpg");
+}
+
+#lodzInfo .universityPhoto, #lodzMMI .universityPhoto, #lodzTC .universityPhoto {
+    background-image: url("../images/illustrations/lodz.jpg");
+}
+
+#varsovieInfo .universityPhoto, #varsovieMMI .universityPhoto {
+    background-image: url("../images/illustrations/varsovie.jpg");
+}
+
+#portugalGEA .universityPhoto, #portugalInfo .universityPhoto, #portugalMMI .universityPhoto, #portugalTC .universityPhoto {
+    background-image: url("../images/illustrations/portugal.jpg");
+}
+
+#uqamInfo .universityPhoto, #uqamMMI .universityPhoto {
+    background-image: url("../images/illustrations/uqam.jpg");
+}
+
+#uqacInfo .universityPhoto, #uqacMMI .universityPhoto, #uqacGEA .universityPhoto, #uqacTC .universityPhoto {
+    background-image: url("../images/illustrations/uqac.jpg");
+}

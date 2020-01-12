@@ -1,3 +1,5 @@
 #languageButton {
-    background-image: url("../images/icons/france-flag.svg");
+    background-image: url("../images/icons/france-flag.svg") !important;
 }
+
+/*Todo : corriger pb drapeau (->l11 general du site + comparer avec ce fichier*/

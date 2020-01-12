@@ -528,3 +528,12 @@ section li {
     padding: 7px;
     cursor: pointer;
 }
+
+.faq .answer {
+    margin: 7px;
+    color: var(--fontColor2);
+}
+
+.noBreak {
+    white-space: nowrap;
+}
