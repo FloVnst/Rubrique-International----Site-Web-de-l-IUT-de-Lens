@@ -1,3 +1,11 @@
 #pictureBanner {
     background-position: 50% 108vw;
 }
+
+.universityPhoto {
+    display: none;
+}
+
+.universityContent {
+    width: 100% !important;
+}

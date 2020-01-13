@@ -14,15 +14,19 @@
 .formationResult > div > .universityPhoto {
     width: 30%;
     height: inherit;
-    background-color: #ee287c;
 }
 
 .formationResult > div > .universityContent {
     color: var(--fontColor2);
     width: 70%;
     padding: 7px;
+    border-top: 1px solid var(--fontColor2);
 }
-
+/*
+.formationResult > div > .universityContent:last-of-type {
+    border-bottom: none;
+}
+*/
 .titleRow {
     display: flex;
     align-items: center;
@@ -35,7 +39,7 @@
 
 .universityPhoto {
     background-position: center;
-    background-size: 100% auto;
+    background-size: auto 100%;
 }
 
 #dundalkInfo .universityPhoto, #dundalkMMI .universityPhoto, #dundalkTC .universityPhoto {
