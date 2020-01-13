@@ -133,3 +133,7 @@
 #logoUniv > img {
     width: 90px;
 }
+
+.sommaire {
+    align-self: flex-start;
+}

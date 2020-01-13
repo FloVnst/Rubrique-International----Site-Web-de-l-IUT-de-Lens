@@ -514,6 +514,12 @@ section > h3 {
 section li {
     list-style-type: square;
     margin: 2px 0;
+    color: var(--fontColor2);
+}
+
+section > ul {
+    align-self: flex-start;
+    margin: 0 0 0 10%;
 }
 
 .faq > details {
@@ -536,4 +542,21 @@ section li {
 
 .noBreak {
     white-space: nowrap;
+}
+
+.titleRow > p {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+section > h4 {
+    align-self: flex-start;
+    margin: 10px 10% 10px 10%;
+    color: var(--fontColor1);
+}
+
+section > hr {
+    width: 80%;
+    border: 1px solid var(--fontColor2);
+    margin-top: 20px;
 }
