@@ -172,10 +172,6 @@
             <span class="pathCurrentPage">Proposer un stage/un emploi</span>
         </nav>
 
-        <header>
-            Lorem ipsum dolor
-        </header>
-
     </section>
 
 
@@ -185,13 +181,13 @@
         <h2>Envoyer une proposition</h2>
 
         <form>
-
-            <fieldset>
+            <!-- Partie Infos entreprise -->
+            <fieldset id="formStep0">
                 <legend>Votre entreprise</legend>
 
                 <div class="fieldElement">
                     <label for="companyNameInput">Nom de l'entreprise : </label>
-                    <input type="text" id="companyNameInput" name="companyName" placeholder="Entrez le nom de votre entreprise" required>
+                    <input type="text" id="companyNameInput" class="formField" name="companyName" placeholder="Entrez le nom de votre entreprise" required>
                 </div>
 
 
@@ -202,7 +198,7 @@
                         <div class="fieldElement">
                             <label for="countryInput">Pays : </label>
                             <select id="countryInput" name="country" required>
-                                <option value="" style="background-color: blue">Veuillez sélectionner un pays</option>
+                                <option value="" style="background-color: var(--secondaryColor)">Veuillez sélectionner un pays</option>
                                 <option value="1" selected>France</option>
                                 <option value="2">Afghanistan</option>
                                 <option value="3">Afrique Centrale</option>
@@ -459,16 +455,20 @@
 
                 </fieldset>
 
+                <div class="formControls">
+                    <input type="button" class="formButton" value="Suivant" onclick="nextStep()">
+                </div>
+
             </fieldset>
 
 
-
-            <fieldset>
+            <!-- Partie sur l'émetteur -->
+            <fieldset id="formStep1" class="hidden">
                 <legend>À propos de vous</legend>
 
                 <div class="fieldElement">
                     <label for="civilityInput">Civilité :</label>
-                    <select id="civilityInput" name="civility">
+                    <select id="civilityInput" class="formField" name="civility">
                         <option>Mme.</option>
                         <option>M.</option>
                         <option>Mx. (neutre)</option>
@@ -477,20 +477,28 @@
 
                 <div class="fieldElement">
                     <label for="lastNameInput">Nom : </label>
-                    <input type="text" id="lastNameInput" name="lastName" required>
+                    <input type="text" id="lastNameInput" class="formField" name="lastName" required>
                 </div>
 
                 <div class="fieldElement">
                     <label for="firstNameInput">Prénom : </label>
-                    <input type="text" id="firstNameInput" name="firstName" required>
+                    <input type="text" id="firstNameInput" class="formField" name="firstName" required>
+                </div>
+
+                <div class="formControls">
+                    <input type="button"class="formButton" value="Précédent" onclick="previousStep()">
+                    <input type="button" class="formButton" value="Suivant" onclick="nextStep()">
                 </div>
 
             </fieldset>
 
 
-            <fieldset>
-                <legend>Domaines de formation concernés par votre proposition</legend>
+            <!-- Message -->
+            <fieldset id="formStep2" class="hidden">
+                <legend>Votre message</legend>
 
+                <!-- Ciblage -->
+                <label class="fieldLabel">Départements concernés :<br></label>
                 <div class="fieldsetRow">
                     <div class="fieldRadioRaw">
                         <input type="checkbox" id="infoFormationInput" value="info" name="courses">
@@ -512,16 +520,14 @@
                         <label for="commerceFormationInput">Commerce</label>
                     </div>
                 </div>
-            </fieldset>
 
-            <fieldset>
-                <legend>Votre message</legend>
-
+                <!-- Objet -->
                 <div class="fieldElement">
                     <label>Objet de votre message :</label>
                     <input type="text" placeholder="Entrez l'objet de votre message" required>
                 </div>
 
+                <!-- Message -->
                 <div class="fieldElement">
                     <label for="messageInput">Votre message :</label>
                     <textarea placeholder="Entrez votre message" id="messageInput" name="message" required></textarea>
@@ -531,9 +537,13 @@
                     <label for="attachmentInput">Pièce jointe : </label>
                     <input type="file" id="attachmentInput" name="attachment">
                 </div>
-            </fieldset>
 
-            <input type="submit">
+                <div class="formControls">
+                    <input type="button" class="formButton" value="Précédent" onclick="previousStep()">
+                    <input type="submit" class="formButton">
+                </div>
+
+            </fieldset>
 
         </form>
 
@@ -545,29 +555,16 @@
         <h2 class="hidden">Contact</h2>
         <div id="addressContainer">
             <address>
-                <p class="addressTitle">Université d'Artois</p>
-                <p class="addressContent">Service Relations Internationales</p>
+                <p class="addressTitle">IUT de Lens</p>
+                <p class="addressContent">Secrétariat</p>
                 <div>
                     <span>
-                        9 rue du Temple – BP 10665<br>
-                        62030 Arras cedex<br>
+                        SP 16, Rue de l'Université<br>
+                        62307 Lens<br>
                         France<br>
                     </span>
                     <span>
-                        <a href="mailto:sri@univ-artois.fr">sri@univ-artois.fr</a>
-                    </span>
-                </div>
-            </address>
-
-            <address>
-                <p class="addressTitle">IUT de Lens</p>
-                <p class="addressContent">Service Relations Internationales</p>
-                <div>
-                    <span>
-                        <a href="tel:+33321733232">+33 (0)3 21 73 32 32</a>
-                    </span>
-                    <span>
-                        <a href="mailto:sri@univ-artois.fr">ri@iut-lens.univ-artois.fr</a>
+                        <a href="tel:+33321793232">+33 (0)3 21 79 32 32</a>
                     </span>
                 </div>
             </address>
@@ -612,7 +609,7 @@
 <script src="../../scripts/colorMode.js"></script>
 <script src="../../scripts/general.js"></script>
 <script src="../../scripts/navMenu.js"></script>
-<script src="../../scripts/general.js"></script>
+<script src="scripts/form.js"></script>
 
 
 </body>

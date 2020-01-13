@@ -11,6 +11,23 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(var(--fourthColor), .7);
+}
+
+form > fieldset > legend {
+    font-size: 20px;
+    background-color: var(--secondaryColor);
+    min-width: 60%;
+    padding: 3px 0;
+    color: white;
+}
+
+form > fieldset > fieldset > legend {
+    font-size: 20px;
+    background-color: var(--secondaryColor);
+    min-width: 40%;
+    padding: 3px 0;
+    color: white;
 }
 
 #coordFieldset {
@@ -41,6 +58,7 @@ input {
     flex-direction: row;
     justify-content: center;
     width: 90%;
+    flex-wrap: wrap;
 }
 
 .fieldRadioRaw {
@@ -55,7 +73,8 @@ select {
 }
 
 legend {
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
+    text-align: center;
 }
 
 fieldset {
@@ -65,4 +84,75 @@ fieldset {
     width: 95%;
     margin: 15px 0;
     padding: 0;
+}
+
+.fieldElement input, .fieldElement select {
+    font-size: 18px;
+    color: var(--fontColor2);
+    background-color: var(--bgColor);
+    height: 25px;
+    border-bottom: 2px solid var(--fontColor2);
+}
+
+.fieldElement select {
+    height: 25px;
+    font-size: 14px;
+    border: 2px solid var(--fontColor2);
+}
+
+.fieldElement label, .fieldLabel {
+    color: var(--fontColor2);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.fieldRadioRaw {
+    margin: 10px;
+}
+
+.fieldRadioRaw > label {
+    margin-left: 5px;
+    color: var(--fontColor2);
+}
+
+.subForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+input[type="file"] {
+    font-size: 16px;
+    border: 2px solid var(--fontColor2);
+}
+
+textarea {
+    min-width: 40vw;
+    max-width: 40vw;
+    color: var(--fontColor2);
+    background-color: var(--bgColor);
+    font-family: inherit;
+    padding: 10px;
+    border: 2px solid var(--fontColor2);
+}
+
+.formButton {
+    background-color: rgba(154, 171, 00, .5);
+    margin: 10px 5px;
+    font-size: 16px;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: var(--fontColor2);
+    transition: background-color .15s;
+}
+
+.formButton:hover {
+    background-color: rgba(154, 171, 00, .8);
+}
+
+[data-theme="light"] fieldset{
+    border: 1px solid var(--secondaryColor);
 }

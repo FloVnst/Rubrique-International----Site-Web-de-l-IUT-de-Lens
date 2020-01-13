@@ -1,3 +1,7 @@
 form {
     width: 900px;
 }
+
+.fieldElement {
+    width: 40vw;
+}
