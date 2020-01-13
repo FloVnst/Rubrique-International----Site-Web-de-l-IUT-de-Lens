@@ -36,7 +36,7 @@ form > fieldset > fieldset > legend {
 }
 
 .fieldElement {
-    margin: 7px 7px;
+    margin: 7px auto;
 }
 
 .fieldElement > label {
@@ -82,7 +82,7 @@ fieldset {
     flex-direction: column;
     align-items: center;
     width: 95%;
-    margin: 15px 0;
+    margin: 15px auto;
     padding: 0;
 }
 
@@ -104,6 +104,10 @@ fieldset {
     color: var(--fontColor2);
     font-size: 16px;
     margin-top: 15px;
+}
+
+.fieldLabel {
+    text-align: center;
 }
 
 .fieldRadioRaw {
@@ -155,4 +159,9 @@ textarea {
 
 [data-theme="light"] fieldset{
     border: 1px solid var(--secondaryColor);
+}
+
+.formControls {
+    display: flex;
+    justify-content: center;
 }
