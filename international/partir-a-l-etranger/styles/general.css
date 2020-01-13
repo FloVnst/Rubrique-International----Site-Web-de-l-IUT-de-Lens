@@ -33,6 +33,10 @@
     font-size: 18px;
 }
 
+.universityPhoto {
+    background-position: center;
+    background-size: 100% auto;
+}
 
 #dundalkInfo .universityPhoto, #dundalkMMI .universityPhoto, #dundalkTC .universityPhoto {
     background-image: url("../images/illustrations/duntalk.jpg");
@@ -60,4 +64,12 @@
 
 #uqacInfo .universityPhoto, #uqacMMI .universityPhoto, #uqacGEA .universityPhoto, #uqacTC .universityPhoto {
     background-image: url("../images/illustrations/uqac.jpg");
+}
+
+#cegepGEA .universityPhoto, #cegepTC .universityPhoto {
+    background-image: url("../images/illustrations/cegep.jpg");
+}
+
+#sligoTC .universityPhoto {
+    background-image: url("../images/illustrations/sligo.jpg");
 }
