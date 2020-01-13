@@ -22,11 +22,11 @@
     padding: 7px;
     border-top: 1px solid var(--fontColor2);
 }
-/*
-.formationResult > div > .universityContent:last-of-type {
-    border-bottom: none;
+
+.formationResult > div:first-of-type > .universityContent {
+    border-top: none;
 }
-*/
+
 .titleRow {
     display: flex;
     align-items: center;
