@@ -1,0 +1,24 @@
+#cvDashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#cvDashboard > a {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--fontColor2);
+    margin: 20px;
+    background-color: var(--bgColor);
+    text-decoration: none;
+}
+
+h1 {
+    background-color: var(--mainColor);
+}
