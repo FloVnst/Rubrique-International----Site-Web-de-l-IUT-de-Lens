@@ -1,1 +1,788 @@
+<!DOCTYPE html>
 
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study at IUT  - IUT de Lens</title>
+
+    <!-- Styles appliqués à l'ensemble du site -->
+    <link rel="stylesheet" type="text/css" href="../../../styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../../styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../../styles/classic.css">
+
+    <!-- Styles appliqués à cette page -->
+    <link rel="stylesheet" type="text/css" href="../../../international/partir-a-l-etranger/styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../../international/partir-a-l-etranger/styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../../international/partir-a-l-etranger/styles/classic.css">
+
+    <!-- Styles appliqués aux pages en anglais -->
+    <link rel="stylesheet" type="text/css" href="../../styles/general.css">
+
+    <!-- Styles appliqués à cette page et/ou aux pages des rubriques enfant -->
+    <link rel="stylesheet" type="text/css" href="../../../international/styles/internationalAndChildrenGeneral.css">
+
+</head>
+
+
+<body>
+
+<!-- Barre d'en-tête -->
+<header id="pageHeader">
+
+    <a id="logoIUT" href="http://www.iut-lens.univ-artois.fr">
+        <img alt="Page d'accueil" src="../../../images/icons/logo-iut.svg">
+    </a>
+
+    <!-- Partie droite du header -->
+    <div id="rightSideHeader">
+
+        <!-- Menu commun à la version classique et la version mobile -->
+        <div id="commonMenu">
+
+            <!-- Boutons Luminosité et Langue -->
+            <div id="controls">
+                <a href="../../../international/partir-a-l-etranger" class="controlIcon">
+                    <div id="languageButton">
+                        <span lang="fr">Français</span>
+                    </div>
+                </a>
+                <button id="luminosityButton" class="controlIcon" onclick="changeTheme()">
+                    <span class="lightButton">Light Mode</span>
+                    <span class="darkButton">Dark Mode</span>
+                </button>
+            </div>
+
+            <!-- Menu déroulant avec des liens pour les étudiants -->
+            <div id="studentsLinks">
+                <p>Students ▼</p>
+                <ul>
+                    <li><a href="">Digital work space</a></li>
+                    <li><a href="">Schedule</a></li>
+                    <li><a href="">Libraries</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="">Intranet</a></li>
+                </ul>
+            </div>
+
+            <!-- Bouton "hamburger" pour afficher le menu de navigation mobile -->
+            <div id="hamburgerButton">
+                <div></div>
+            </div>
+
+        </div>
+
+
+        <!-- Menu de navigation (responsive) -->
+        <nav id="navMenusContainer">
+            <ul id="navMenus">
+                <li id="navMenu0" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">ACADEMICS</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav navMenu">
+                        <li><a href="">Training offer</a></li>
+                        <li><a href="">Continuing education</a></li>
+                        <li><a href="">Alternate training</a></li>
+                        <li><a href="">How to apply for the IUT ?</a></li>
+                        <li><a href="">Registering at the Lens Institute of Technology</a></li>
+                        <li><a href="">Certifications : CLES/C2i/Voltaire Project</a></li>
+                        <li><a href="">Entrepreneurship</a></li>
+                        <li><a href="">Support for students</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu1" class="navMenu">
+                    <div class="navTitle">
+                        <a href="../">INTERNATIONAL</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Study at IUT</a></li>
+                        <li><a href="../going-abroad/">Going abroad</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu2" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">CAMPUS LIFE</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Library</a></li>
+                        <li><a href="">Health/Disability/Social workers</a></li>
+                        <li><a href="">Digital services and tools</a></li>
+                        <li><a href="">Sport</a></li>
+                        <li><a href="">Culture</a></li>
+                        <li><a href="">Pratical life</a></li>
+                        <li><a href="">Associations</a></li>
+                        <li><a href="">Student job</a></li>
+                    </ul>
+                </li>
+
+                <li id="navMenu3" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">COMPANIES</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Trainings at your service</a></li>
+                        <li><a href="">Apprenticeship tax</a></li>
+                        <li><a href="../../companies/offer-an-internship-or-a-job">Offer an internship or a job</a></li>
+                        <li><a href="">Propose a partnership</a>
+                    </ul>
+                </li>
+
+                <li id="navMenu4" class="navMenu">
+                    <div class="navTitle">
+                        <a href="">ABOUT IUT</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="submenusNav">
+                        <li><a href="">Director's message</a></li>
+                        <li><a href="">Lens Institute of Technology in brief</a></li>
+                        <li><a href="">Organization</a></li>
+                        <li><a href="">Assets of Lens Institute of Technology</a>
+                        <li><a href="">Contact and access plan</a>
+                        <li><a href="">Media</a>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<div id="pageContent">
+
+    <!-- Bannière contenant l'image d'en-tête -->
+    <div id="pictureBanner"></div>
+
+    <!-- Section d'en-tête, contenant les liens vers les pages enfant -->
+    <section id="contentHeader" class="coloredBlock">
+
+        <h1>Going abroad</h1>
+
+        <nav class="pagePath">
+            <a href="http://www.iut-lens.univ-artois.fr/">Home</a>
+            <span> > </span>
+            <a href="../">International</a>
+            <span> > </span>
+            <span class="pathCurrentPage">Going abroad</span>
+        </nav>
+
+        <p class="chapo">
+            By being a student at the IUT in Lens, you have the possibility of going on international mobility. In addition to the academic or professional aspect, going abroad can be an opportunity to meet new people, discover a new culture or improve in a foreign language. There are two types of mobility, namely study semesters and internships.    
+        </p>
+
+
+        <table class="sommaire">
+            <tr>
+                <th class="sommaireTop">Going abroad</th>
+            </tr>
+            <tr class="sommaireBottom">
+                <td>
+                    <ul class="sommaireContent">
+                        <li><a href="#semesters">Semesters of study abroad</a></li>
+                        <li><a href="#stages">Internships abroad</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <!-- Section IUT -->
+    <section id="sectionsemesters" class="coloredBlock">
+        <h2 id="semesters"> Semesters of study abroad</h2>
+        <p class="subsection">Students of professional license or second year of DUT have the possibility of leaving to study at a foreign university for one semester. The application phase takes place the year before mobility. This must take place in one of the partner universities of the IUT.</p>
+        <h3>The partner universities of the IUT</h3>
+        <p class="subsection">Select your department to display the exchange possibilities concerning you:</p>
+        <div id="formationsContainer">
+            <div id="formationsMenu">
+                <div id="formationSelectorInformatique" class="formationSelector selectedFormationSelector">
+                    <img alt="" src="../../../international/images/icons/informatique.svg">
+                    <p>Computer science</p>
+                </div>
+
+                <div id="formationSelectorMediasNum" class="formationSelector">
+                    <img alt="" src="../../../international/images/icons/mediasNum.svg">
+                    <p>Digital Media</p>
+                </div>
+
+                <div id="formationSelectorGestion" class="formationSelector">
+                    <img alt="" src="../../../international/images/icons/management.svg">
+                    <p>Management</p>
+                </div>
+
+                <div id="formationSelectorCommerce" class="formationSelector">
+                    <img alt="" src="../../../international/images/icons/commerce.svg">
+                    <p>Marketing</p>
+                </div>
+            </div>
+
+            <!-- Résultats -->
+            <div id="formationsResults">
+                <div id="formationsInformatique" class="formationResult selectedFormation">
+                    <div id="dundalkInfo">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Dundalk Institute of Technology</h4><p>Dundalk, Ireland</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span> 1 student chosen from the Computer science and Digital media departments</li>
+                                <li><span class="liTitle">Duration : </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>English B2</li>
+                                <li><span class="liTitle">Content: </span>Course</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT Informatique</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.dkit.ie/" target="_blank">Duntalk Institute of Technology website</a>.</p>
+                        </div>
+                    </div>
+                    <div id="roumanieInfo">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University of West Timişoara</h4><p>Timisoara, Romania</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 students chosen from the Computer science and Digital media departments </li>
+                                <li><span class="liTitle">Duration : </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>English B1 or Romanian</li>
+                                <li><span class="liTitle">Content: </span>Study project</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT Informatique</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.uvt.ro/en/" target="_blank">site de l'University de l'Ouest Timişoara </a>.</p>
+                        </div>
+                    </div>
+                    <div id="lodzInfo">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University de Lodz</h4><p>Lodz, Pologne</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 élèves choisis parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration : </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT Informatique</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://iso.uni.lodz.pl/" target="_blank">site de l'University de Łódź</a>.</p>
+                        </div>
+                    </div>
+                    <div id="varsovieInfo">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>École polytechnique de Varsovie</h4><p>Varsovie, Pologne</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>4 élèves choisis parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration : </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B2 ou Polonais</li>
+                                <li><span class="liTitle">Content: </span>Projet d'études</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT Informatique</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.pw.edu.pl/" target="_blank">site de l'école polytechnique de Varsovie</a>.</p>
+                        </div>
+                    </div>
+                    <div id="portugalInfo">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Institut supérieur polytechnique de Gaya</h4><p>Vila Nova de Gaia, Portugal</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 élèves choisis parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT Informatique</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.ispgaya.pt" target="_blank">site de l'institut supérieur polytechnique de Gaya</a>.</p>
+                        </div>
+                    </div>
+                    <div id="uqamInfo">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University du Québec à Montréal (UQAM)</h4><p>Montréal, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 élèves choisis parmi les départements informatique et médias numériques, sous réserve de disponibilité des places (échange commun avec l'UFR de droit et l'UFR de sciences)</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT Informatique</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://uqam.ca" target="_blank">site de l'UQAM</a>.</p>
+                        </div>
+                    </div>
+                    <div id="uqacInfo">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University du Québec à Chicoutimi (UQAC)</h4><p>Chicoutimi, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>pas de limitation</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT Informatique</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.uqac.ca" target="_blank">site de l'UQAC</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="formationsMediasNum" class="formationResult">
+                    <div id="dundalkMMI">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Dundalk Institute of Technology</h4><p>Dundalk, Irlande</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>1 élève choisi parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B2</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT MMI</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.dkit.ie/" target="_blank">site du Duntalk Institute of Technology</a>.</p>
+                        </div>
+                    </div>
+                    <div id="roumanieMMI">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University de l'Ouest Timişoara</h4><p>Timișoara, Roumanie</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 élèves choisis parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1 ou Roumain</li>
+                                <li><span class="liTitle">Content: </span>Projet d'études</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT MMI</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.uvt.ro/en/" target="_blank">site de l'University de l'Ouest Timişoara </a>.</p>
+                        </div>
+                    </div>
+                    <div id="lodzMMI">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University de Lodz</h4><p>Lodz, Pologne</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 élèves choisis parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT MMI</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://iso.uni.lodz.pl/" target="_blank">site de l'University de Łódź</a>.</p>
+                        </div>
+                    </div>
+                    <div id="varsovieMMI">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>École polytechnique de Varsovie</h4><p>Varsovie, Pologne</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>4 élèves choisis parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B2 ou Polonais</li>
+                                <li><span class="liTitle">Content: </span>Projet d'études</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT MMI</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.pw.edu.pl/" target="_blank">site de l'école polytechnique de Varsovie</a>.</p>
+                        </div>
+                    </div>
+                    <div id="portugalMMI">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Institut supérieur polytechnique de Gaya</h4><p>Vila Nova de Gaia, Portugal</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 élèves choisi parmi les départements informatique et médias numériques</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT MMI</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.ispgaya.pt" target="_blank">site de l'institut supérieur polytechnique de Gaya</a>.</p>
+                        </div>
+                    </div>
+                    <div id="uqamMMI">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University du Québec à Montréal (UQAM)</h4><p>Montréal, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2 élèves choisis parmi les départements informatique et médias numériques, sous réserve de disponibilité des places (échange commun avec l'UFR de droit et l'UFR de sciences)</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT MMI</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://uqam.ca" target="_blank">site de l'UQAM</a>.</p>
+                        </div>
+                    </div>
+                    <div id="uqacMMI">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University du Québec à Chicoutimi (UQAC)</h4><p>Chicoutimi, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>pas de limitation</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT MMI et DU PCM</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.uqac.ca" target="_blank">site de l'UQAC</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="formationsGestion" class="formationResult">
+                    <div id="portugalGEA">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Institut supérieur polytechnique de Gaya</h4><p>Vila Nova de Gaia, Portugal</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2</li>
+                                <li><span class="liTitle">Duration: </span>1 semester (semester 3)</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT GEA</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.ispgaya.pt" target="_blank">site de l'institut supérieur polytechnique de Gaya</a>.</p>
+                        </div>
+                    </div>
+                    <div id="uqacGEA">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University du Québec à Chicoutimi (UQAC)</h4><p>Chicoutimi, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>pas de limitation</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT GEA</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.uqac.ca" target="_blank">site de l'UQAC</a>.</p>
+                        </div>
+                    </div>
+                    <div id="cegepGEA">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>CEGEP du Vieux-Montréal</h4><p>Montréal, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>5 élèves choisis parmi les départements Gestion et Commerce</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT GEA</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.cvm.qc.ca" target="_blank">site du CEGEP du Vieux-Montréal</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="formationsCommerce" class="formationResult">
+                    <div id="dundalkTC">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Dundalk Institute of Technology</h4><p>Dundalk, Irlande</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B2</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT TC, LP Tourisme</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.dkit.ie/" target="_blank">site du Duntalk Institute of Technology</a>.</p>
+                        </div>
+                    </div>
+                    <div id="sligoTC">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Institute of Technology Sligo</h4><p>Sligo, Irlande</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>6</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B2</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT TC, LP Tourisme</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.dkit.ie/" target="_blank">site de l'Institute of Technology Sligo</a>.</p>
+                        </div>
+                    </div>
+                    <div id="lodzTC">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University de Lodz</h4><p>Lodz, Pologne</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT TC, LP Tourisme</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://iso.uni.lodz.pl/" target="_blank">site de l'University de Łódź</a>.</p>
+                        </div>
+                    </div>
+                    <div id="portugalTC">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>Institut supérieur polytechnique de Gaya</h4><p>Vila Nova de Gaia, Portugal</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>2</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Anglais B1</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT TC, LP Tourisme</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.ispgaya.pt" target="_blank">site de l'institut supérieur polytechnique de Gaya</a>.</p>
+                        </div>
+                    </div>
+                    <div id="uqacTC">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>University du Québec à Chicoutimi (UQAC)</h4><p>Chicoutimi, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>pas de limitation</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT TC</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.uqac.ca" target="_blank">site de l'UQAC</a>.</p>
+                        </div>
+                    </div>
+                    <div id="cegepTC">
+                        <div class="universityPhoto"></div>
+                        <div class="universityContent">
+                            <div class="titleRow"><h4>CEGEP du Vieux-Montréal</h4><p>Montréal, Canada</p></div>
+                            <ul>
+                                <li><span class="liTitle">Number of seats: </span>5 élèves choisis parmi les départements Gestion et Commerce</li>
+                                <li><span class="liTitle">Duration: </span>1 semester</li>
+                                <li><span class="liTitle">Required language level: </span>Français</li>
+                                <li><span class="liTitle">Content: </span>Cours</li>
+                                <li><span class="liTitle">Concerned training: </span>DUT TC</li>
+                            </ul>
+                            <p>For more information, consult the <a href="https://www.cvm.qc.ca" target="_blank">site du CEGEP du Vieux-Montréal</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>The BCI program (Office of Interuniversity Cooperation)</h3>
+        <p class="subsection">If you want to join a university in Quebec, you can participate in the BCI. This is an exchange program established between France and Quebec allowing you to join one of the following universities:
+        </p>
+        <ul>
+            <li><a href="https://bi.ulaval.ca" target="_blank">University Laval, Québec</a></li>
+            <li><a href="https://polymtl.ca" target="_blank">École Polytechnique, Montréal</a></li>
+            <li><a href="https://usherbrooke.ca" target="_blank">University de Sherbrooke</a></li>
+            <li><a href="https://uqam.ca" target="_blank">University of Québec à Montréal</a></li>
+            <li><a href="https://uqtr.ca" target="_blank">University of Québec à Trois-Rivières</a></li>
+            <li><a href=https://uqar.ca"" target="_blank">University of Québec à Rimouski</a></li>
+            <li><a href="https://uqo.ca" target="_blank">University of Québec en Outaouais</a></li>
+            <li><a href="https://uqat.ca" target="_blank">University of Québec en Abitibi-Témiscamingue</a></li>
+            <li><a href="https://enap.uquebec.ca" target="_blank">National School of Public Administration, Gatineau - Montreal - Quebec - Saguenay - Trois-Rivières</a></li>
+            <li><a href="https://etsmtl.ca" target="_blank">School of Higher Technology, Montreal</a></li>
+            <li><a href="https://ubishops.ca" target="_blank">Bishop's University, Lennoxville (anglophone)</a></li>
+        </ul>
+
+        <div class="moreInformations">
+            <span><br><br>For more information :</span>
+            <ul>
+                <li><a href="https://echanges-etudiants.bci-qc.ca/">BCI Quebec Student Exchange Program website</a></li>
+                <li><a href="http://www.univ-artois.fr/international/venir-etudier-luniversite-dartois/en-programme-dechange/avant-votre-depart" target="_blank">Procedures before your departure</a></li>
+                <li><a href="http://www.univ-artois.fr/international/venir-etudier-luniversite-dartois/en-programme-dechange/votre-arrivee" target="_blank">Procedures upon your arrival</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section id="sectionStages" class="coloredBlock">
+        <h2 id="stages">Internships abroad </h2>
+        <p class="subsection">Regarding internships abroad, students can do this in two ways: either in a university laboratory in the form of a study project, or in a company. The laboratory internships take place from the beginning of April to the end of June.</p>
+        <h3>Internships in a university laboratory</h3>
+        <p class="subsection">In this case, students can complete their internship at a partner university of the IUT. These are not necessarily the same as those that welcome students for a semester of study.<br><br>Here is the list of partner universities for internships:</p>
+
+        <div class="universityTile">
+            <h4>Technological Institute of Larissa, Greece</h4>
+            <p class="subsection"> The Technological Institute of Larissa welcomes students as part of a university laboratory project. This project will focus on web programming.</p>
+            <ul>
+                <li>Students concerned: DUT Informatique and DUT MMI</li>
+                <li>Number of seats: 2</li>
+                <li>Working language: English B1</li>
+                <li><a href="http://www.teilar.gr/index_en.php" target="_blank">Larissa Technological Institute website</a></li>
+            </ul>
+        </div>
+
+        <div class="universityTile">
+            <h4>Technological University of Warsaw, Poland</h4>
+            <p class="subsection">The Warsaw University of Technology welcomes students as part of a university laboratory project, with support from computer scientists from the business world.</p>
+            <ul>
+                <li>Students concerned: DUT Informatique and DUT MMI</li>
+                <li>Number of seats: 4</li>
+                <li>Working language: Anglais B2</li>
+                <li><a href="http://www.pw.edu.pl/engpw" target="_blank">Warsaw Technological University website</a></li>
+            </ul>
+        </div>
+
+
+        <div class="universityTile">
+            <h4> West University of Timisoara, Romania</h4>
+            <p class="subsection">L’University de l’Ouest accueille les étudiants dans le cadre d’un projet en laboratoire universitaire. Les sujets de travail portent sur la programmation web ou sur la conception de jeux.</p>
+            <ul>
+                <li>Students concerned: DUT Informatique and DUT MMI</li>
+                <li>Number of seats: 2</li>
+                <li>Working language: English B1</li>
+                <li><a href="http://www.uvt.ro/fr/" target="_blank">University of West Timisoara website</a></li>
+            </ul>
+        </div>
+
+        <div class="universityTile">
+            <h4>Cegep du vieux Montreal, Canada</h4>
+            <p class="subsection">The Cegep du Vieux Montréal offers 2 internships each year to DUT students from the TC and GEA departments. The internship subjects are adapted to the CV and the wishes of the students.</p>
+            <ul>
+                <li>Students concerned: DUT TC and DUT GEA </li>
+                <li>Number of seats: 2</li>
+                <li>Working language: French</li>
+                <li><a href="http://www.cvm.qc.ca" target="_blank">Cegep du vieux Montréal website</a></li>
+            </ul>
+        </div>
+
+        <div class="universityTile">
+            <h4>Tohoku Kosen Federation, Japan</h4>
+            <p class="subsection">Les Kosen Japonais sont des établissements équivalents aux IUT français. Nos partenaires sont Iwaki, Sendai, Ichinoseki, Akita, Aomori et Hakodate. Les étudiants sont accueillis dans le cadre d’un stage en laboratoire. Les sujets de stage sont adaptés aux CV et aux souhaits des étudiants.</p>
+            <ul>
+                <li>Students concerned: DUT TC and DUT GEA </li>
+                <li>Number of seats: 2</li>
+                <li>Working language: English B1</li>
+                <li><a href="https://www.kosen-k.go.jp/" target="_blank">Tohoku Kosen Federation website</a></li>
+            </ul>
+        </div>
+
+        <h3>Internships in companies abroad</h3>
+        <p class="subsection">Internships are an important part of the training of our students. They allow the use of knowledge acquired at the IUT and their application in a professional context.</p>
+        <p class="subsection">The subject of the internship is chosen by the company and then validated by the student's home department (IT, Digital Media, Management or Commerce). During the internship, the department monitors the student with exchanges with the company, and as far as possible with visits by teachers to the place of the internship.</p>
+        <p class="subsection">At the end of the internship, the student must prepare an internship report and a defense. The internship is evaluated jointly between the company and the department on the following elements:</p>
+        <ul>
+            <li>Work performed in a company, with regard to the objectives set in the agreement</li>
+            <li>The written report</li>
+            <li>The defense, evaluated by a jury made up of the training supervisor, the tutor teacher and a permanent teacher from the department.</li>
+        </ul>
+        <p class="subsection">Your internship can be carried out in a company abroad. It is therefore necessary that you find this internship by yourself.<br><br>If you are doing your internship in Europe, you can benefit from Erasmus + scholarships.</p>
+    </section>
+
+    <section class="faq coloredBlock">
+        <h2 id="FAQ">FAQ</h2>
+        <details>
+            <summary class="question">What conditions must I meet to be able to go on mobility?</summary>
+            <p class="answer">If you wish to join a partner university, a selection phase takes place within the IUT. The criteria taken into account are:</p>
+            <ul>
+                <li>The results and the seriousness in the work</li>
+                <li>Attendance in progress</li>
+                <li>The behaviour</li>
+                <li>Language level</li>
+            </ul>
+            <p class="answer">Certain establishments also set conditions for being able to study there, such as:</p>
+            <ul>
+                <li>Academic results</li>
+                <li>Take an English test</li>
+                <li>A limited number of places per establishment</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary class="question">What costs should I expect during my stay?</summary>
+            <p class="answer"> Besides spending on food or accommodation, you may have to buy school supplies and books. So remember to budget for it. Also ask about the cost of current products.</p>
+        </details>
+
+        <details>
+            <summary class="question">How to finance my studies or my internship abroad?</summary>
+            <p class="answer">There are a number of aids when you go on international mobility. To benefit from it, you must make a request to the International Relations department of the University of Artois. The amounts and conditions are presented at <a href="http://www.univ-artois.fr/international/partir-etudier-letranger/financements/financements-et-criteres-deligibilite" target="_blank">this address</a>.<br>Note: you must plan a sufficient budget before leaving because the aid is often paid several weeks after your arrival.</p>
+        </details>
+
+        <details>
+            <summary class="question">I'd like to go abroad but my language level is not sufficient. What to do?</summary>
+            <p class="answer">The University of Artois allows students to follow free language reinforcement courses and level tests in language centers. For more information, you can consult <a href="http://www.univ-artois.fr/formations/la-maison-des-langues" target="_blank">this link</a>.<br>In addition, it is possible to go to a French-speaking country like Canada for example.</p>
+        </details>
+
+        <details>
+            <summary class="question">You are a business manager, how to offer an internship to students of the IUT of Lens?</summary>
+            <p class="answer">You can send your proposal using the form available at <a href="../../entreprises/proposer-un-stage-ou-un-emploi">this address</a>.</p>
+        </details>
+    </section>
+
+    <!-- Section contact -->
+    <section id="sectionContact">
+        <h2 class="hidden">Contact</h2>
+        <div id="addressContainer">
+            <address>
+                <p class="addressTitle">University d'Artois</p>
+                <p class="addressContent">Service Relations Internationales</p>
+                <div>
+                    <span>
+                        9 rue du Temple – BP 10665<br>
+                        62030 Arras cedex<br>
+                        France<br>
+                    </span>
+                    <span>
+                        <a href="mailto:sri@univ-artois.fr">sri@univ-artois.fr</a>
+                    </span>
+                </div>
+            </address>
+
+            <address>
+                <p class="addressTitle">IUT de Lens</p>
+                <p class="addressContent">Service Relations Internationales</p>
+                <div>
+                    <span>
+                        <a href="tel:+33321733232">+33 (0)3 21 73 32 32</a>
+                    </span>
+                    <span>
+                        <a href="mailto:sri@univ-artois.fr">ri@iut-lens.univ-artois.fr</a>
+                    </span>
+                </div>
+            </address>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- Pied de page -->
+<footer id="pageFooter">
+
+    <nav>
+
+        <div id="footerLinksContainer">
+            <div id="footerLinks">
+                <a href="">Contact</a>
+                <a href="">Mentions légales</a>
+            </div>
+
+            <div id="socialNetworks">
+                <a href=""><img alt="Facebook" src="../../../images/icons/facebook-button.svg"></a>
+                <a href=""><img alt="Twitter" src="../../../images/icons/twitter-button.svg"></a>
+                <a href=""><img alt="Linkedin" src="../../../images/icons/linkedin-button.svg"></a>
+                <a href=""><img alt="Youtube" src="../../../images/icons/youtube-button.svg"></a>
+            </div>
+        </div>
+
+        <div id="copyrightBanner">
+            <p>© 2020 <a href="../../cv/FlorianVaneste">Florian Vaneste</a> – <a href="../../cv/ThomasCottrez">Thomas Cottrez</a> – <a href="../../cv/TristanLeroy">Tristan Leroy</a>. All rights reserved.</p>
+        </div>
+
+    </nav>
+
+    <a id="logoUniv" href=""><img alt="Logo de l'University d'Artois" src="../../../images/icons/logo-universite-d-artois.svg"></a>
+
+</footer>
+
+
+<script src="../../../scripts/colorMode.js"></script>
+<script src="../../../scripts/general.js"></script>
+<script src="../../../scripts/navMenu.js"></script>
+<script src="../../../international/scripts/menuFormations.js"></script>
+<script src="../../../international/partir-a-l-etranger/scripts/general.js"></script>
+
+</body>
+
+</html>

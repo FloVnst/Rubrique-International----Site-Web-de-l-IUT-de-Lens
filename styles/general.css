@@ -461,6 +461,23 @@ address a {
     color: var(--fontColor1);
 }
 
+.moreInformations {
+    margin-top: 20px;
+}
+
+.moreInformations > span {
+    font-weight: bold;
+}
+
+#certifList h4 {
+    margin-bottom: 5px;
+}
+
+#certifList p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 section {
     display: flex;
 }
