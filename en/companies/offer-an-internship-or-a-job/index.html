@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr" data-theme="dark">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,21 @@
     <title>International - IUT de Lens</title>
 
     <!-- Styles appliqués à l'ensemble du site -->
-    <link rel="stylesheet" type="text/css" href="../../styles/general.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../styles/mobile.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../styles/classic.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../../styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../../styles/classic.css">
 
     <!-- Styles appliqués à cette page -->
-    <link rel="stylesheet" type="text/css" href="styles/general.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="styles/mobile.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="styles/classic.css">
+    <link rel="stylesheet" type="text/css" href="../../../entreprises/proposer-un-stage-ou-un-emploi/styles/general.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 975px)" href="../../../entreprises/proposer-un-stage-ou-un-emploi/styles/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 975px)" href="../../../entreprises/proposer-un-stage-ou-un-emploi/styles/classic.css">
 
-    <!-- Styles aux pages des rubriques enfant de la partie Entreprises -->
-    <link rel="stylesheet" type="text/css" href="../styles/companiesAndChildren.css">
+    <!-- Styles appliqués aux pages en anglais -->
+    <link rel="stylesheet" type="text/css" href="../../styles/general.css">
+
+    <!-- Styles appliqués à cette page et/ou aux pages des rubriques enfant -->
+    <link rel="stylesheet" type="text/css" href="../../../entreprises/styles/companiesAndChildren.css">
+
 </head>
 
 
@@ -28,7 +32,7 @@
 <header id="pageHeader">
 
     <a id="logoIUT" href="http://www.iut-lens.univ-artois.fr">
-        <img alt="Page d'accueil" src="../../images/icons/logo-iut.svg">
+        <img alt="Home page" src="../../../images/icons/logo-iut.svg">
     </a>
 
     <!-- Partie droite du header -->
@@ -39,25 +43,25 @@
 
             <!-- Boutons Luminosité et Langue -->
             <div id="controls">
-                <a href="" class="controlIcon">
+                <a href="../../international" class="controlIcon">
                     <div id="languageButton">
-                        <span lang="en">English</span>
+                        <span lang="fr">Français</span>
                     </div>
                 </a>
                 <button id="luminosityButton" class="controlIcon" onclick="changeTheme()">
-                    <span class="lightButton">Thème clair</span>
-                    <span class="darkButton">Thème sombre</span>
+                    <span class="lightButton">Light Mode</span>
+                    <span class="darkButton">Dark Mode</span>
                 </button>
             </div>
 
             <!-- Menu déroulant avec des liens pour les étudiants -->
             <div id="studentsLinks">
-                <p>Étudiants ▼</p>
+                <p>Students ▼</p>
                 <ul>
-                    <li><a href="">ENT</a></li>
-                    <li><a href="">Emploi du temps</a></li>
-                    <li><a href="">Bibliothèques</a></li>
-                    <li><a href="">Annuaire</a></li>
+                    <li><a href="">Digital work space</a></li>
+                    <li><a href="">Schedule</a></li>
+                    <li><a href="">Libraries</a></li>
+                    <li><a href="">Directory</a></li>
                     <li><a href="">Intranet</a></li>
                 </ul>
             </div>
@@ -75,74 +79,74 @@
             <ul id="navMenus">
                 <li id="navMenu0" class="navMenu">
                     <div class="navTitle">
-                        <a href="">FORMATIONS</a>
+                        <a href="">ACADEMICS</a>
                         <div>▼</div>
                     </div>
                     <ul class="submenusNav navMenu">
-                        <li><a href="">Offre de formation</a></li>
-                        <li><a href="">Formation tout au long de la vie</a></li>
-                        <li><a href="">L'alternance</a></li>
-                        <li><a href="">Comment candidater à l'IUT ?</a></li>
-                        <li><a href="">S'inscrire à l'IUT de Lens</a></li>
-                        <li><a href="">Certifications : CLES/C2i/projet Voltaire</a></li>
-                        <li><a href="">Entrepreneuriat</a></li>
-                        <li><a href="">Accompagnement des étudiants</a></li>
+                        <li><a href="">Training offer</a></li>
+                        <li><a href="">Continuing education</a></li>
+                        <li><a href="">Alternate training</a></li>
+                        <li><a href="">How to apply for the IUT ?</a></li>
+                        <li><a href="">Registering at the Lens Institute of Technology</a></li>
+                        <li><a href="">Certifications : CLES/C2i/Voltaire Project</a></li>
+                        <li><a href="">Entrepreneurship</a></li>
+                        <li><a href="">Support for students</a></li>
                     </ul>
                 </li>
 
                 <li id="navMenu1" class="navMenu">
                     <div class="navTitle">
-                        <a href="../../international/">INTERNATIONAL</a>
+                        <a href="">INTERNATIONAL</a>
                         <div>▼</div>
                     </div>
                     <ul class="submenusNav">
-                        <li><a href="../../international/venir-etudier-a-l-iut">Venir étudier à l'IUT</a></li>
-                        <li><a href="../../international/partir-a-l-etranger">Partir à l'étranger</a></li>
+                        <li><a href="../../international/study-at-iut/">Study at IUT</a></li>
+                        <li><a href="../../international/going-abroad/">Going abroad</a></li>
                     </ul>
                 </li>
 
                 <li id="navMenu2" class="navMenu">
                     <div class="navTitle">
-                        <a href="">VIE À L'IUT</a>
+                        <a href="">CAMPUS LIFE</a>
                         <div>▼</div>
                     </div>
                     <ul class="submenusNav">
-                        <li><a href="">Bibliothèque</a></li>
-                        <li><a href="">Santé/Handicap/Assistantes sociales</a></li>
-                        <li><a href="">Services et outils numériques</a></li>
+                        <li><a href="">Library</a></li>
+                        <li><a href="">Health/Disability/Social workers</a></li>
+                        <li><a href="">Digital services and tools</a></li>
                         <li><a href="">Sport</a></li>
                         <li><a href="">Culture</a></li>
-                        <li><a href="">Vie pratique</a></li>
-                        <li><a href="">Vie associative</a></li>
-                        <li><a href="">Job étudiant</a></li>
+                        <li><a href="">Pratical life</a></li>
+                        <li><a href="">Associations</a></li>
+                        <li><a href="">Student job</a></li>
                     </ul>
                 </li>
 
                 <li id="navMenu3" class="navMenu">
                     <div class="navTitle">
-                        <a href="">ENTREPRISES</a>
+                        <a href="">COMPANIES</a>
                         <div>▼</div>
                     </div>
                     <ul class="submenusNav">
-                        <li><a href="">Des formations à votre service</a></li>
-                        <li><a href="">Taxe d'apprentissage</a></li>
-                        <li><a href="../../entreprises/proposer-un-stage-ou-un-emploi">Proposer un stage/un emploi</a></li>    <!-- Page contenant le formulaire de contact pour les entreprises -->
-                        <li><a href="">Proposer un partenariat</a>
+                        <li><a href="">Trainings at your service</a></li>
+                        <li><a href="">Apprenticeship tax</a></li>
+                        <li><a href="">Offer an internship or a job</a></li>
+                        <li><a href="">Propose a partnership</a>
                     </ul>
                 </li>
 
                 <li id="navMenu4" class="navMenu">
                     <div class="navTitle">
-                        <a href="">IUT</a>
+                        <a href="">ABOUT IUT</a>
                         <div>▼</div>
                     </div>
                     <ul class="submenusNav">
-                        <li><a href="">Mot de la directrice</a></li>
-                        <li><a href="">IUT de Lens en bref</a></li>
-                        <li><a href="">Organisation</a></li>
-                        <li><a href="">Les atouts de l'IUT</a>
-                        <li><a href="">Contacts et plan d'accès</a>
-                        <li><a href="">Médias</a>
+                        <li><a href="">Director's message</a></li>
+                        <li><a href="">Lens Institute of Technology in brief</a></li>
+                        <li><a href="">Organization</a></li>
+                        <li><a href="">Assets of Lens Institute of Technology</a>
+                        <li><a href="">Contact and access plan</a>
+                        <li><a href="">Media</a>
                     </ul>
                 </li>
 
@@ -153,7 +157,6 @@
 
 </header>
 
-
 <div id="pageContent">
 
     <!-- Bannière contenant l'image d'en-tête -->
@@ -162,18 +165,17 @@
     <!-- Section d'en-tête, contenant les liens vers les pages enfant -->
     <section id="contentHeader" class="coloredBlock">
 
-        <h1>Proposer un stage/un emploi</h1>
+        <h1>Offer an internship or a job</h1>
 
         <nav class="pagePath">
-            <a href="http://www.iut-lens.univ-artois.fr/">Accueil</a>
+            <a href="http://www.iut-lens.univ-artois.fr/">Home</a>
             <span> > </span>
-            <a href="">Entreprises</a>
+            <a href="">Companies</a>
             <span> > </span>
-            <span class="pathCurrentPage">Proposer un stage/un emploi</span>
+            <span class="pathCurrentPage">Offer an internship or a job</span>
         </nav>
 
     </section>
-
 
     <!-- Section de formulaire de contact -->
     <section id="contactForm" class="coloredBlock">
@@ -586,10 +588,10 @@
             </div>
 
             <div id="socialNetworks">
-                <a href=""><img alt="Facebook" src="../../images/icons/facebook-button.svg"></a>
-                <a href=""><img alt="Twitter" src="../../images/icons/twitter-button.svg"></a>
-                <a href=""><img alt="Linkedin" src="../../images/icons/linkedin-button.svg"></a>
-                <a href=""><img alt="Youtube" src="../../images/icons/youtube-button.svg"></a>
+                <a href=""><img alt="Facebook" src="../../../images/icons/facebook-button.svg"></a>
+                <a href=""><img alt="Twitter" src="../../../images/icons/twitter-button.svg"></a>
+                <a href=""><img alt="Linkedin" src="../../../images/icons/linkedin-button.svg"></a>
+                <a href=""><img alt="Youtube" src="../../../images/icons/youtube-button.svg"></a>
             </div>
         </div>
 
@@ -599,15 +601,15 @@
 
     </nav>
 
-    <a id="logoUniv" href=""><img alt="Logo de l'université d'Artois" src="../../images/icons/logo-universite-d-artois.svg"></a>
+    <a id="logoUniv" href=""><img alt="Logo de l'université d'Artois" src="../../../images/icons/logo-universite-d-artois.svg"></a>
 
 </footer>
 
 
-<script src="../../scripts/colorMode.js"></script>
-<script src="../../scripts/general.js"></script>
-<script src="../../scripts/navMenu.js"></script>
-<script src="scripts/form.js"></script>
+<script src="../../../scripts/colorMode.js"></script>
+<script src="../../../scripts/general.js"></script>
+<script src="../../../scripts/navMenu.js"></script>
+<script src="../../../entreprises/proposer-un-stage-ou-un-emploi/scripts/form.js"></script>
 
 
 </body>

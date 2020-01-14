@@ -364,9 +364,12 @@ a[target="_blank"]:not(.externalIconHidden):after {
     width: 32px;
 }
 
-#copyrightBanner > p {
+#copyrightBanner > p, #copyrightBanner > p > a {
     color: white;
     font-size: 11px;
+}
+
+#copyrightBanner > p {
     margin: 0 20px 0 0;
 }
 
