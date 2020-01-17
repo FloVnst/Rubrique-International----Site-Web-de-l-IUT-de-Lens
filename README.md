@@ -1,10 +1,10 @@
 # Projet tutoré - Semestre 1 de DUT informatique
-**IUT de Lens - Université d'Artois**
+**IUT de Lens - Université d'Artois**<br>
 
-**Refonte de la partie internationale du site web de l'IUT de Lens**<br/><br/>
+**Refonte de la partie internationale du site web de l'IUT de Lens**<br><br>
 https://florianvaneste.github.io/ProjetTutoreDUT-S1/international/
 
-<br/>
+<br>
 
 ## Organisation des fichiers et des répertoires
 
@@ -112,6 +112,6 @@ Les fichiers du site sont organisés de la façon suivante :
     |---------styles : répertoire contenant les fichiers css appliqués à l'ensemble du site
 
 
-**Remarque :**<br/>
-Ce projet ne concerne que la partie "International" du site de l'IUT.<br/>
-La page d'accueil du projet est donc la page d'accueil de la partie "International".<br/>
+**Remarque :**<br>
+Ce projet ne concerne que la partie "International" du site de l'IUT.<br>
+La page d'accueil du projet est donc la page d'accueil de la partie "International".<br>
