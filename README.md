@@ -3,7 +3,7 @@
 
 **Refonte de la partie internationale du site web de l'IUT de Lens**<br><br>
 
-Apercu du site :
+Apercu du site :<br>
 https://florianvaneste.github.io/ProjetTutoreDUT-S1/international/
 
 <br>
