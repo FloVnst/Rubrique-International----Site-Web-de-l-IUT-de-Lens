@@ -1,4 +1,4 @@
-# Projet tutoré - Semestre 1 de DUT informatique (2019)
+# Projet tutoré - Semestre 1 de DUT Informatique (2019)
 **IUT de Lens - Université d'Artois**  
 
 Site web réalisé par Florian Vaneste, Thomas Cottrez et Tristan Leroy.
